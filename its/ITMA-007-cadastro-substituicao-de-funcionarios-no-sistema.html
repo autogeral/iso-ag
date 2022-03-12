@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<!--http://cfbcursos.com.br/2016/03/04/menu-principal-em-arquivo-externo/ -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Auto Geral - ISO 9001</title>
+    <!-- Bootstrap CSS CDN 
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+	-->
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1633832,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <object class="menuLateral" data="../index.html"></object>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" style="overflow-y: auto:">
+            <div class="container-fluid">
+                <!-- Títulos -->
+                <div class="row mark">
+                    <div class="col"></div>
+                    <div class="col mb-4">
+                        <h4 class="mt-4" style="text-align: center">Instrução de
+                            Trabalho</h4>
+                        <h4 class="mt-4" style="text-align: center">Cadastro, Substituição de Funcionários no Sistema
+                        </h4>
+                    </div>
+                    <div class="col mt-4">
+                        <table border=0px cellpadding=3px>
+                            <tr>
+                                <td><output class="font-weight-bold">Código:</output> <output
+                                        class="ml-2">ITMA-007</output></td>
+                            </tr>
+                            <tr>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">01</output>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2">
+                    <tr>
+                        <th colspan="3">Elaboração</th>
+                        <th colspan="3">Aprovação</th>
+                    </tr>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Visto</th>
+                        <th>Data</th>
+                        <th>Nome</th>
+                        <th>Visto</th>
+                        <th>Data</th>
+                    </tr>
+                    <tr>
+                        <td>Vitor Hugo dos Santos</td>
+                        <td></td>
+                        <td>16/10/2019</td>
+                        <td>Murilo de Moraes Tuvani</td>
+                        <td></td>
+                        <td>16/10/2019</td>
+                    </tr>
+
+                </table>
+                <p class="font-weight-bold mt-2">1. Objetivo</p>
+                <p>O objetivo desta instrução de trabalho é orientar sobre o procedimento de cadastro e substituição de
+                    usuários no sistema.</p>
+
+                <p class="font-weight-bold">2. Referências</p>
+                <p>Não aplicável.</p>
+
+                <p class="font-weight-bold">3. Definições</p>
+                <p>Não aplicável.</p>
+
+                <p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
+
+                <p class="font-weight-bold offset-1">4.1 Preenchimento do Formulário Eletrônico:</p>
+
+                <p class="offset-2">• Receber o formulário de cadastro/mudança de funcionário no sistema.<br>
+                    • Acesse o Usuários e computadores do Active Directory, então acesse a pasta de usuários.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img1.png" width=540 height=400 class="mb-4" />
+                </div>
+
+
+                <p class="offset-2">• Feito isso, clique com o botão direito sobre o usuário a ser copiado, clique em
+                    copy, preencha as informações na tela que vai se abrir e clique em next, como demonstram as imagens
+                    a seguir:</p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img2.png" width=440 height=400 class="mb-4" />
+                </div>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img3.png" width=440 height=400 class="mb-4" />
+                </div>
+                <p class="offset-2">• Coloque a senha padrão (12345678), indique que o usuário deve mudar a senha no
+                    primeiro acesso e clique em next</p>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img4.png" width=340 height=300 class="mb-4" />
+                </div>
+
+                <p class="offset-2">•Confira as informações e clique em finish:</p>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img5.png" width=340 height=300 class="mb-4" />
+                </div>
+
+                <p class="font-weight-bold offset-1">4.2Acesso ao sistema:</p>
+                <p class="offset-2">•<b>>Pré-Condição:</b> receber o formulário de cadastro/mudança de
+                    funcionário no sistema:</p>
+
+
+                <p class="offset-2">-Acessar o banco de dados e definir o novo usuário através do comando: create user
+                    <b>‘< política de criação de usuário>’</b>@’%’ identified by <b>‘< política de criação de senha>
+                            ’</b></p>
+
+                <p class="offset-2">• <b>Política de criação de usuário:</b> O login do usuário será
+                    definido
+                    de acordo com esta política, que determina que o login do usuário deverá ser < primeiro nome>.<
+                            último nome>, tudo com letras minúsculas.</p>
+
+                <p class="offset-2">Exemplo: Arthur Camocardo Corrêa, o login será arthur.correa. </p>
+
+                <p class=" offset-2">• Política de criação de senha: A senha do usuário será definida de
+                    acordo com esta política, que determina que a senha do usuário deverá ser o primeiro nome do
+                    usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.:</p>
+
+                <p class="offset-2">Exemplo: Arthur Camocardo Corrêa criado no ano de 2019, a senha será
+                    Arthur@2019.</p>
+
+                <p class="offset-2">-Acessar o banco de dados e verificar as permissões do usuário que
+                    têm a mesma ou parecida função do novo funcionário através do comando: show grants for ‘< nome do
+                        usuário>’@’%’.</p>
+
+                <p class="offset-2">-Estas mesmas permissões deverão ser passadas ao novo usuário, para isso basta
+                    copiá-las e executá-las, não esqueça de mudar o nome do usuário a receber os novos privilégios.
+                </p>
+
+                <p class="offset-2">-O próximo passo é a criação ou substituição do usuário no sistema
+                    ERPJ, abra a tela de cadastro de acessos, preencha os campos e clique no botão cadastrar, como
+                    ilustrado logo abaixo:</p>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img6.png" width=640 height=300 class="mb-4" />
+                </div>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img7.png" width=340 height=300 class="mb-4" />
+                </div>
+                <p class="offset-2">-Consulte no controle de acessos ao sistema, os níveis de acesso do usuário
+                    utilizado como base para criação do novo usuário.</p>
+
+                <p class="offset-2">-Se for substituição, consulte o usuário pelo padrão de login e
+                    altere os níveis de acesso conforme desejado, feito isso clique sobre o botão alterar.</p>
+                <p class="offset-2">-Caso o substituído estiver saindo da empresa, remova todos os acessos do mesmo</p>
+
+                <p class="font-weight-bold offset-1">4.3 Criação de e-mail, Gmail, LocaWeb</p>
+                <p class="offset-2"><b>•Pré-Condição:</b> receber o formulário de cadastro/mudança de funcionário no
+                    sistema e ter acesso de administrador aos e-mails. </p>
+                    <p class="offset-2"><b>•Gmail:</b> </p>
+                <div class="container">
+                    <!--arrumar as imagens-->
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../imagens/cadastro-funcionario-img8.png" />
+                        </div>
+                        <div class="col-4">
+                            <img src="../imagens/cadastro-funcionario-img9.png" />
+                        </div>
+                        <div class="col-4">
+                            <img src="../imagens/cadastro-funcionario-img10.png" />
+                        </div>
+                    </div>
+                </div>
+                <p class="offset-2">-Preencha os campos do formulário, a senha deverá ser 12345678 e deve-se indicar a
+                    mudança de senha no primeiro acesso do usuário ao e-mail. Feito isso clique em adicionar novo
+                    usuário</p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img11.png" width=340 height=400 class="mb-4" />
+                </div>
+
+                <p class="offset-2"><b>•LocaWeb:</b> </p>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img12.png" width=900 height=400 class="mb-4" />
+                </div>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img13.png" width=900 height=400 class="mb-4" />
+                </div>
+                <p class="offset-2">
+                    -Clicar em Criar caixa única
+                    <br>
+                	-Preencher os campos do formulário, seguindo as políticas de criação de usuários e senhas citados acima;
+                </p>
+                <div style="text-align: center">
+                    <img src="../imagens/cadastro-funcionario-img14.png" width=500 height=300 class="mb-4" />
+                </div>
+                <p class="font-weight-bold"> 5. Registros</p>
+                <p class="offset-2">-Sistema ERPJ<br>
+                    -Google
+                    <br>
+                    -LocaWeb
+                </p>
+
+                <p class="font-weight-bold">6. Histórico de Revisões</p>
+                <table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2 mb-4">
+                    <tr style="background: #CCC">
+                        <th>Revisão</th>
+                        <th>Descrição</th>
+                        <th>Revisor</th>
+                        <th>Data</th>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Emissão inicial</td>
+                        <td>Vitor Hugo dos Santos</td>
+                        <td>16/10/2019</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Revisão geral do documento</td>
+                        <td>Arthur Corrêa/ João Valente</td>
+                        <td>11/02/2021</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+
+</body>
+
+</html>

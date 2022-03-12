@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<!--http://cfbcursos.com.br/2016/03/04/menu-principal-em-arquivo-externo/ -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Auto Geral - ISO 9001</title>
+	<!-- Bootstrap CSS CDN 
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+	-->
+	<!-- Our Custom CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/print.css" media="print">
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 1633832, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+</head>
+
+<body>
+	<div class="d-flex" id="wrapper">
+		<object class="menuLateral" data="../index.html"></object>
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper" style="overflow-y: auto:">
+			<div class="container-fluid">
+				<!-- Títulos -->
+				<div class="row mark">
+					<div class="col"></div>
+					<div class="col mb-4">
+						<h4 class="mt-4" style="text-align: center">Instrução de
+							Trabalho</h4>
+						<h4 class="mt-4" style="text-align: center">Configuração de
+							Telefone IP</h4>
+					</div>
+					<div class="col mt-4">
+						<table border=0px cellpadding=3px>
+							<tr>
+								<td><output class="font-weight-bold">Código:</output> <output
+										class="ml-2">ITMA-006</output></td>
+							</tr>
+							<tr>
+								<td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">00</output>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2">
+					<tr>
+						<th colspan="3">Elaboração</th>
+						<th colspan="3">Aprovação</th>
+					</tr>
+					<tr>
+						<th>Nome</th>
+						<th>Visto</th>
+						<th>Data</th>
+						<th>Nome</th>
+						<th>Visto</th>
+						<th>Data</th>
+					</tr>
+					<tr>
+						<td>Vitor Hugo do Santos</td>
+						<td></td>
+						<td>02/04/2019</td>
+						<td>Murilo de Moraes Tuvani</td>
+						<td></td>
+						<td>05/04/2019</td>
+					</tr>
+				</table>
+				<p class="font-weight-bold mt-2">1. Objetivo</p>
+				<p>O objetivo desta instrução é orientar sobre o procedimento de
+					configuração de um telefone IP.</p>
+
+				<p class="font-weight-bold">2. Referências</p>
+				<p>Não aplicável</p>
+
+				<p class="font-weight-bold">3. Definições</p>
+				<p>Não aplicável</p>
+
+				<p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
+
+				<p class="font-weight-bold offset-1">4.1 Configuração do telefone.</p>
+				<p class="offset-2">- O telefone deve estar configurado no modo DHCP, para confirmar utilizando o
+					teclado pressione MENU -> REDE -> CONFIGURAÇÕES IP -> SELECIONE DHCP -> REINICIAR;
+					<br>
+					- Após reiniciar, para acessar as configurações via web, conecte o cabo de rede e pressione duas
+					vezes o primeiro botão do lado esquerdo logo abaixo do display para ver o IP. (EXEMPLO: 10.50.1.18);
+					<br>
+					- Após confirmar o número do IP correspondente, acesse o navegador, coloque o número do IP e
+					pressione ENTER. Irá aparecer a tela de login.
+				</p>
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img1.png"  class="mb-4" />
+				</div>
+				<p class="offset-2">**OBS: A senha sermpre será admin</p>
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img2.png"  class="mb-4" />
+				</div>
+
+				<p class="offset-2">- Vá até CONTAS -> CONTA 1 -> CONFIGURAÇÕES GERAIS </p>
+
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img3.png" width=700 height=450 class="mb-4" />
+				</div>
+
+				<p class="offset-2 font-weight-bold">4.2 Campos que deverão ser preenchidos</p>
+				<p class="offset-2">- Ative a conta;
+					-	Preencha o campo NOME DA CONTA (Nome do usuário, nome do usuário e setor, fica a critério)
+					<br>
+					-	Servidor SIP sempre colocar o IP do PABX da filial onde o telefone irá funcionar (Exemplo matriz: 10.50.1.240);
+					<br>
+					-	Id do Usuário SIP e Autenticar ID colocar o número do ramal do respectivo telefone;
+					<br>
+					-	Senha de autenticação da matriz sempre será as letras agm + ramal (EXEMPLO: agm7173), caso não registre ou seja outra loja, confirmar a senha no PABX. (Passo a passo abaixo);
+					<br>
+					-	Preencha o campo NOME com nome do usuário ou o mesmo nome colocado no campo NOME DA CONTA;
+					<br>
+					-	Salvar e aplicar;
+					<br>
+					-	Feito isso, após o telefone reiniciar, estará pronto para uso.
+					</p>
+					<p class="offset-2 font-weight-bold">Confirmando a senha de Autenticação do PABX</p>
+					<p class="offset-2">- Acesse o PABX da loja correspondente:</p>
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img4.png" class="mb-4" />
+				</div>
+
+				<p class="offset-2">**OBS: Login na planilha de senhas.</p>
+				<p class="offset-2">- Através do menu lateral, acesse CONFIGURÇÃO DE PABX -> CONFIGURAÇÃO -> SLOT;</p>
+
+
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img11.png" class="mb-4" />
+				</div>
+
+				<p class="offset-2">- Através do menu superior, acesse REGISTRO DE TELEFONE IP -> TELEFONE PADRÃO SIP;</p>
+				
+				<p class="offset-2">- Abrirá a tela com os ramais e suas respectivas senhas de autenticação;</p>
+				
+				<div style="text-align: center">
+					<img src="../imagens/configura-telefone-ip-img12.png" class="mb-4" />
+				</div>
+				
+
+				<p class="font-weight-bold">5. Registros</p>
+				<p class="offset-2">- Sistema de configuração do próprio
+					aparelho telefônico e PABX.</p>
+
+				<p class="font-weight-bold">6. Histórico de Revisões</p>
+				<table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2 mb-4">
+					<tr style="background: #CCC">
+						<th>Revisão</th>
+						<th>Descrição</th>
+						<th>Revisor</th>
+						<th>Data</th>
+					</tr>
+					<tr>
+						<td>00</td>
+						<td>Emissão inicial</td>
+						<td>Vitor Hugo dos Santos</td>
+						<td>02/04/2019</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+	</div>
+
+</body>
+
+</html>
