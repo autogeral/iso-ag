@@ -47,7 +47,7 @@
                                 <td><output class="font-weight-bold">Código:</output> <output class="ml-2">ITVE-002</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">06</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">07</output>
                                 </td>
                             </tr>
                         </table>
@@ -99,8 +99,7 @@
                     <br>
                     -Catálogo de produtos
                     <br>
-                    O atendimento ao cliente pode ser feito através do balcão, telefone, WhatsApp, Skype,
-                    e-mail e/ou site www.autogeral.com.br, e outros canais de vendas.
+                    O atendimento ao cliente pode ser feito: balcão, telefone, WhatsApp, App de Vendas, Skype, e-mail, site www.autogeral.com.br, e outros canais de vendas.
                 </p>
 
                 <p class="font-weight-bold offset-1">4.1.1 Análise crítica - venda balcão</p>
@@ -180,8 +179,7 @@
                     <br>
                     -Consultar o vendedor responsável, supervisor de vendas ou gestor/encarregado da loja.
                     <br>
-                    <b>Nota 1:</b> O gesto/encarregado definirá o vendedor responsável por auxiliar os demais vendedores que por
-                    sua vez terá acesso ao estoque.
+                    
                 </p>
 
                 <p class="font-weight-bold offset-1">4.1.4 Elaboração de Orçamento: </p>
@@ -191,10 +189,10 @@
                     De posse de todas informações necessárias e após dúvidas esclarecidas com o cliente (quando houver),
                     o vendedor deve proceder conforme:
                     <br>
-                    -Cadastro do cliente: conforme descrito no item 4.1.8 deste documento.
+                    -Cadastro do cliente: conforme descrito no item 4.1.7 deste documento.
                     <br>
                     -Gerar Orçamento: Movimentos, Orçamentos, Cadastrar (Segue o mesmo padrão de informações
-                    necessárias, indicadas no item 4.1.8 deste documento).
+                    necessárias, indicadas no item 4.1.7 deste documento).
                     <br>
                     -O orçamento tem validade de 3 dias
                 </p>
@@ -209,6 +207,8 @@
                     <br>
                     -A entrega está dentro da área de cobertura?
                     <br>
+                    -Há necessidade de agendamento da entrega?
+                    <br>
                     -Requer embalagem adicional (por exemplo: em caso de produto frágil)?
                     <br>
                     -Possível atender prazo especificado pelo cliente para todos os itens constantes do orçamento?
@@ -216,7 +216,7 @@
                 </p>
 
                 <p class="font-weight-bold offset-1">4.1.6 Quando o cliente não aprova o orçamento.</p>
-                <p class="offset-2">-Deve ser finalizado selecionando o motivo, conforme tela</p>
+                <p class="offset-2">-Deve ser finalizado dentro do prazo de validade do orçamento, selecionando o motivo, conforme tela:</p>
 
                 <div style="text-align: center;">
                     <img src="../imagens/venda-img11.png" class="img img-fluid mb-4">
@@ -243,14 +243,13 @@
                     <b>Nota 1:</b> A cada 15 minutos, o sistema atualiza a lista de pendências. Logo após
                     finalizar/resolver uma pendência, o sistema não elimina ela da lista, só a cada 15 minutos.
                     <br>
-                    <b>Nota 2:</b> Quaisquer divergências encontradas com relação ao orçamento previamente enviado ao
-                    cliente devem ser registradas e gerado novo orçamento, quando necessário.
+                    <b>Nota 2:</b> Quaisquer divergências encontradas com relação ao orçamento  previamente enviado ao cliente devem ser atualizadas as informações do mesmo.
                     <br>
                     <b>Nota 3:</b> As questões acima verificadas devem ser registradas conforme aplicável no sistema
                     ERPJ, campo “Obs.”.
                     <br>
                     <b>Nota 4:</b> Após todas as verificações e pendências resolvidas, efetivar a venda conforme item
-                    4.1.8 deste documento. Criar a venda a partir do orçamento, para que o sistema o finalize.
+                    4.1.7 deste documento. Criar a venda a partir do orçamento, para que o sistema o finalize.
                     <br>
                     <b>Nota 5:</b> A partir da aprovação do orçamento, o mesmo poderá criar romaneio convertendo em
                     venda e fazendo os ajustes necessários.
@@ -301,8 +300,7 @@
                     sistema busca os dados do cliente e preenche, a maior parte das informações, automaticamente,
                     devendo o vendedor, apenas completar os dados faltantes e conferir com o cliente, os dados
                     preenchidos pelo sistema. Esta alternativa pode ser utilizada de 2 formas: Pelo menu Cadastros,
-                    Consultas cadastrais, Realizar Consulta cadastral ou direto na tela do Romaneio, ao clicar no botão
-                    Adicionar cliente. </p>
+                    Consultas cadastrais, Realizar Consulta cadastral.</p>
 
                 <div style="text-align: center;">
                     <img src="../imagens/venda-img4.png" class="img img-fluid mb-4">
@@ -335,10 +333,10 @@
                     (Se for a prazo o vendedor consulta o limite, se houver disponível efetuar a venda, se ultrapassar
                     limite ou cliente estiver bloqueado consultar o gestor ou financeiro.
                     <br>
-                    -Canal de vendas.
+                    -Canal de vendas(balcão, telefone, WhatsApp, etc).
                     <br>
                     -Inserir Itens (Clique neste botão e na tela que se abrir, informe o código X do produto, o código
-                    Sequência quando houver, e a quantidade a ser vendida.
+                    Sequência quando houver, e a quantidade a ser vendida, após confirmar o sistema irá listar as informações dos produtos e principalmente mostrar quando há disponível na loja atual e mostrar as lojas que o produto pode ser pedido ordenando pelo o que chega mais rápido.
                     <br>
                     -Clicar se é para entrega ou se o cliente retira, ou auto atendimento (mercadinho).
                     <br>
@@ -346,39 +344,23 @@
                     <br>
                     -Envio de SMS automático para o cliente acompanhar o processo de entrega.
                     <br>
-                    <b> Se for produtos vindos das filiais</b>, adicionar pedido de compras, definir a loja onde
-                    requisitará o
-                    produto, clicar em Adicionar item para informar o X e/ou Seq. e quantidade, clicar em Cadastrar, e colocar a
-                    informação no campo observação;
-                    <br>
-                    1 Matriz 
-                    <br>
-                    2 Salto 
-                    <br>
-                    3 Sorocaba Pannunzio
-                    <br>
-                    4 Caetano
-                    <br>
-                    5 Indaiatuba
-                    <br>
-                    6 Porto Feliz 
-                    <br>
-                    7 Sorocaba Itavuvu
-                    <br>
-                    8 Cabreuva 
-                    <br>
-                    9 Tatuí
-                    <br>
+                    <div style="text-align: center;">
+                        <img src="../imagens/venda-img8.png" class="img img-fluid mb-4">
+                    </div>
+                    <b> Se for produtos vindos das filiais</b>,ao clicar em adicionar itens na tela romaneio irá abrir uma janela com informações dos itens para preencher, após preencher os código X, código Sequência, e quantidade será listado os itens com a quantidade necessária que o vendedor precisa por ordem de chegada, podendo ser na loja atual com “AGORA” no tempo, ou em outras lojas ordenando pelo tempo mais rápido que ficará disponível na loja atual.
+                    <p>
+                    Depois de selecionar as quantidades que o vendedor precisará, para a quantidade com disponível “AGORA” irá criar um item de romaneio, para as demais quantidades será feita um pedido para cada loja solicitada.
+                </p>
                 </p>
 
                 <div style="text-align: center;">
-                    <img src="../imagens/venda-img8.png" class="img img-fluid mb-4">
+                    <img src="../imagens/venda-img21.png" class="img img-fluid mb-4">
                 </div>
 
                 <p class="offset-2"><b>Se for remessa em consignação,</b> utiliza-se a operação 50 e informa ao cliente
                     que
                     após 48 horas, se o produto não for devolvido, será efetivado a venda. Lembrando que, consignado é
-                    permitido a penas para clientes de NF.
+                    permitido apenas para clientes de NF.
                     <br>
                     <b>Se for produtos para entrega,</b> o vendedor precisa especificar na aba separação/entrega qual o
                     endereço e selecionar a opção entrega de acordo com o Cep do local a ser entregue o produto.
@@ -432,8 +414,8 @@
                     <b>Nota2:</b> Através do sistema ERPJ deve ser utilizada a Operação 45 (Venda de produto para
                     entrega futura).
                     <br>
-                    <b>Nota3:</b> As notas fiscais de remessa vinculada a venda de entrega futura (operação 46), não
-                    podem ser canceladas, exceto para os casos de devolução de produtos.
+                    <b>Nota3:</b> As notas fiscais venda futura (45) e de remessa vinculada a venda futura (operação 46), não
+                    podem ser canceladas, exceto com autorização única e exclusivamente do setor de compras. 
                     <br>
                     -Se for cliente “Pessoa Jurídica” somente com Nota Fiscal de devolução emitida pelo cliente;
                     <br>
@@ -497,6 +479,12 @@
                         <td>Revisão geral do documento</td>
                         <td>Douglas Verza / Devanir Crizol / Jesiel Gomes</td>
                         <td>08/03/21</td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>Revisão geral do documento</td>
+                        <td>Devanir Crizol / Jesiel Gomes</td>
+                        <td>22/03/22</td>
                     </tr>
                 </table>
 

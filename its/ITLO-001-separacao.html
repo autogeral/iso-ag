@@ -49,7 +49,7 @@
                                         class="ml-2">ITLO-001</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">05</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">06</output>
                                 </td>
                             </tr>
                         </table>
@@ -100,7 +100,7 @@
                 <br/>
                 -Após terminar a separação, levar a peça na conferência, onde o conferente irá terminar o procedimento, conforme ITLO-002.
                 <br/>
-                -Se faltar itens, o estoquista encaminha o romaneio para o responsável do estoque tomar a decisão que pode ser:
+                -Se não localizar o(s) item(s), o estoquista direciona via coletor para itens pendentes, para o responsável da atividade tomar a decisão que pode ser:
                 <br/>
                 -Varredura no estoque para conferir se não está em locação errada.
                 <br/>
@@ -108,7 +108,7 @@
                 <br/>
                 -Pedir no estoque das filiais
                 <br/>
-                -Solicitar ao departamento de compras o produto e/ou solicitar ao departamento de Pós-venda a devolução do dinheiro ao cliente ou crédito.
+                -Em caso de confirmação da falta do item na loja de separação, é disparado um alerta automaticamente via sistema para o vendedor
                 <br/>
                 <br/>
                 <p class="font-weight-bold offset-1">4.1.1 Separação de produto no estoque venda casada</p>
@@ -123,7 +123,9 @@
                     <br/>
                     -Após a separação o estoquista leva a peça para a caixa da loja correspondente e emite a nota fiscal através do sistema ERPJ.
                     <br/>
-                    -Se faltar itens, o estoquista encaminha o romaneio para o responsável do estoque tomar a decisão que pode ser:
+                    -Com a nota em mãos, o estoquista cadastra os volumes, e escaneia o volume, a nota e os itens, conforme o manual no GLPI - <a href="https://fixed-suit-048.notion.site/Roteiro-para-treinamentos-40ae16e3a2be4797bb61a52c1bf3b624" target="_blank">Roteiro para Treinamentos</a>
+                    <br/>
+                    -Se não localizar o(s) item(s), o estoquista direciona via coletor para itens pendentes, para o responsável da atividade tomar a decisão que pode ser: 
                     <br/>
                     -Varredura no estoque para conferir se não está em locação errada;
                     <br/>
@@ -131,36 +133,36 @@
                     <br/>
                     -Pedir no estoque das filiais.
                     <br/>
-                    -Solicitar ao departamento de compras o produto e/ou solicitar ao departamento de Pós-venda a devolução do dinheiro ao cliente ou crédito.
+                    -Em caso de confirmação da falta do item na loja de separação, é disparado um alerta automaticamente via sistema para o vendedor.
                     </p>
 
-                <p class="font-weight-bold offset-1">4.1.2 - Reposição de estoque da Matriz para as filiais</p>
+                <p class="font-weight-bold offset-1">4.1.2 - Reposição de estoque da Matriz para as filiais (Lista) </p>
                 <p class="offset-2">
-                    -Solicitar para o T.I gerar a lista de remanejamento.
+                    -O T.I. gera a lista de remanejamento, duas vezes por dia (de manhã e a tarde).
                     <br>
-                    -Selecionar os romaneios referente a cada loja, e associar aos estoquistas.
+                    -A separação é realizada pelo coletor, conforme sequencia gerada pelo sistema ERPJ .
                     <br/>
-                    -Imprimir os romaneios e confrontar com o coletor 
+                    -Após a separação, o estoquista deixa as peças na mesa da embalagem conforme item 4.2.1. da ITCO-005.
                     <br>
-                    -Em seguida o estoquista separa, e deixa as peças na mesa da embalagem conforme item 4.1.1. da ITCO-005.
                     </p>
 
                 <p class="font-weight-bold offset-1">4.1.3 Reposição de estoque entre filias.</p>
                 <p class="offset-2">
-                    -O Sistema ERPJ gera romaneios para distribuição às filiais.
+                    -O T.I. gera a lista de remanejamento, duas vezes por dia (de manhã e a tarde)
                     <br>
-                	-O estoquista digita seu código para associar o romaneio ao seu coletor. 
+                	-A separação é realizada pelo coletor, conforme sequencia gerada pelo sistema ERPJ  
                     <br>
-                	-Em seguida o estoquista separa, e deixa as peças na mesa da embalagem conforme item 4.2.1. da ITCO-005.
+                	-Após a separação, o estoquista deixa as peças na mesa da embalagem conforme item 4.2.1. da ITCO-005.
                 </p>
 
                 <p class="font-weight-bold offset-1">4.2 Produto não conforme</p>
 
-                <p class="offset-2">Caso não detectado produto não conforme será tratado conforme sitemático estabelecido no item 7.2.2. MQ-001 Manual da Qualidade</p>
+                <p class="offset-2">Caso detectado produto não conforme durante o processo de separação, deverá ser preenchido o formulário de avaria FLO-006 - RNCA - Relatório de Não Conformidade de Avaria, e realizar a baixa do estoque, e o descarte do item.</p>
 
                 <p class="font-weight-bold">5. Registros</p>
                 <p class="offset-2"> Sistemas ERPJ e Coletor</p>
-
+                <p class="offset-2">FLO-006 - RNCA - Relatório de Não Conformidade de Avaria
+</p>
                 <p class="font-weight-bold">6. Histórico de Revisões</p>
                 <table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2 mb-4">
                     <tr style="background: #CCC">
@@ -202,8 +204,14 @@
                     <tr>
                         <td>05</td>
                         <td>Revisão geral do documento</td>
-                        <td>Jonathas Alves/Isaias Veloso</td>
+                        <td>João Guilherme/Isaias Veloso</td>
                         <td>01/03/2021</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>Revisão geral do documento</td>
+                        <td>João Guilherme/Alexandre Borges</td>
+                        <td>01/02/2022</td>
                     </tr>
                 </table>
 
