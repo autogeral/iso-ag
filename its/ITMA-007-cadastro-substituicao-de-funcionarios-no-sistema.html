@@ -50,7 +50,7 @@
                                         class="ml-2">ITMA-007</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">01</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">02</output>
                                 </td>
                             </tr>
                         </table>
@@ -93,7 +93,10 @@
 
                 <p class="font-weight-bold offset-1">4.1 Preenchimento do Formulário Eletrônico:</p>
 
-                <p class="offset-2">• Receber o formulário de cadastro/mudança de funcionário no sistema.<br>
+                <p class="offset-2">• Receber o formulário de cadastro/mudança de funcionário no sistema.
+                    <br>
+                    •	Abrir a área de trabalho remota do AD01 ou BD01;
+                    <br>
                     • Acesse o Usuários e computadores do Active Directory, então acesse a pasta de usuários.
                 </p>
 
@@ -102,30 +105,26 @@
                 </div>
 
 
-                <p class="offset-2">• Feito isso, clique com o botão direito sobre o usuário a ser copiado, clique em
-                    copy, preencha as informações na tela que vai se abrir e clique em next, como demonstram as imagens
-                    a seguir:</p>
+                <p class="offset-2">•Feito isso, clique com o botão direito sobre o usuário a ser copiado, clique em copiar, preencha as informações na tela que vai se abrir e clique em avançar, como demonstram as imagens a seguir:</p>
 
                 <div style="text-align: center">
                     <img src="../imagens/cadastro-funcionario-img2.png" width=440 height=400 class="mb-4" />
                 </div>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img3.png" width=440 height=400 class="mb-4" />
-                </div>
+               
                 <p class="offset-2">• Coloque a senha padrão (12345678), indique que o usuário deve mudar a senha no
-                    primeiro acesso e clique em next</p>
+                    primeiro acesso e clique em avançar</p>
                 <div style="text-align: center">
                     <img src="../imagens/cadastro-funcionario-img4.png" width=340 height=300 class="mb-4" />
                 </div>
 
-                <p class="offset-2">•Confira as informações e clique em finish:</p>
+                <p class="offset-2">•Confira as informações e clique em concluir:</p>
                 <div style="text-align: center">
                     <img src="../imagens/cadastro-funcionario-img5.png" width=340 height=300 class="mb-4" />
                 </div>
 
-                <p class="font-weight-bold offset-1">4.2Acesso ao sistema:</p>
-                <p class="offset-2">•<b>>Pré-Condição:</b> receber o formulário de cadastro/mudança de
-                    funcionário no sistema:</p>
+                <p class="font-weight-bold offset-1">4.2 Acesso ao sistema:</p>
+                <p class="offset-2">•<b>Pré-Condição:</b> receber o formulário de cadastro/mudança de
+                    funcionário para alteração no sistema:</p>
 
 
                 <p class="offset-2">-Acessar o banco de dados e definir o novo usuário através do comando: create user
@@ -144,7 +143,7 @@
                     usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.:</p>
 
                 <p class="offset-2">Exemplo: Arthur Camocardo Corrêa criado no ano de 2019, a senha será
-                    Arthur@2019.</p>
+                    Arthur@2019, recomenda-se a troca da senha no primeiro acesso, pelo usuário.</p>
 
                 <p class="offset-2">-Acessar o banco de dados e verificar as permissões do usuário que
                     têm a mesma ou parecida função do novo funcionário através do comando: show grants for ‘< nome do
@@ -170,6 +169,13 @@
                     altere os níveis de acesso conforme desejado, feito isso clique sobre o botão alterar.</p>
                 <p class="offset-2">-Caso o substituído estiver saindo da empresa, remova todos os acessos do mesmo</p>
 
+                <p class="font-weight-bold offset-1">Cadastro de estoquista</p>
+                <p class="offset-2">Preencha com os dados do colaborador, e caso o mesmo utilize o coletor, deve-se informar no campo Coletor o número de série do equipamento.
+
+                    <div style="text-align: center">
+                        <img src="../imagens/cadastro-funcionario-img15.png" width=340 height=300 class="mb-4" />
+                    </div>
+
                 <p class="font-weight-bold offset-1">4.3 Criação de e-mail, Gmail, LocaWeb</p>
                 <p class="offset-2"><b>•Pré-Condição:</b> receber o formulário de cadastro/mudança de funcionário no
                     sistema e ter acesso de administrador aos e-mails. </p>
@@ -180,17 +186,11 @@
                         <div class="col-4">
                             <img src="../imagens/cadastro-funcionario-img8.png" />
                         </div>
-                        <div class="col-4">
-                            <img src="../imagens/cadastro-funcionario-img9.png" />
-                        </div>
-                        <div class="col-4">
-                            <img src="../imagens/cadastro-funcionario-img10.png" />
-                        </div>
-                    </div>
                 </div>
-                <p class="offset-2">-Preencha os campos do formulário, a senha deverá ser 12345678 e deve-se indicar a
-                    mudança de senha no primeiro acesso do usuário ao e-mail. Feito isso clique em adicionar novo
-                    usuário</p>
+                <p class="offset-2">•Preencha os campos do formulário, a senha do usuário será definida de acordo com a política, que determina que a senha do usuário deverá ser o primeiro nome do usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.
+                  <br>
+                    Exemplo: Arthur Camocardo Corrêa criado no ano de 2019, a senha será Arthur@2019, recomenda-se a troca da senha no primeiro acesso, pelo usuário. e deve-se indicar a mudança de senha no primeiro acesso do usuário ao e-mail. Feito isso clique em adicionar novo usuário
+                    </p>
 
                 <div style="text-align: center">
                     <img src="../imagens/cadastro-funcionario-img11.png" width=340 height=400 class="mb-4" />
@@ -211,6 +211,9 @@
                 <div style="text-align: center">
                     <img src="../imagens/cadastro-funcionario-img14.png" width=500 height=300 class="mb-4" />
                 </div>
+
+                <p class="offset-2">
+                •	Após criação do e-mail, o funcionário deverá ser incluído nos grupos de e-mails pertinente à sua função.
                 <p class="font-weight-bold"> 5. Registros</p>
                 <p class="offset-2">-Sistema ERPJ<br>
                     -Google
@@ -237,6 +240,12 @@
                         <td>Revisão geral do documento</td>
                         <td>Arthur Corrêa/ João Valente</td>
                         <td>11/02/2021</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Revisão geral do documento</td>
+                        <td>João Valente/ Lays Rodrigues/ Murilo Lima</td>
+                        <td>28/01/2022</td>
                     </tr>
                 </table>
 
