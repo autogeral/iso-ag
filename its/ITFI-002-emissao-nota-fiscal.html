@@ -49,7 +49,7 @@
                                         class="ml-2">ITFI-002</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">03</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">04</output>
                                 </td>
                             </tr>
                         </table>
@@ -110,6 +110,8 @@
                     <br>
                     -Consultar procedimentos da ITFI-003 Abertura e Fechamento de Caixa
                     <br>
+                    -Cadastrar
+                    <br>
                 </p>
 
                 <p class="font-weight-bold offset-1">4.2 Transferência Entre lojas</p>
@@ -140,6 +142,10 @@
                     8-Cabreúva
                     <br>
                     9-Tatuí
+                    <br>
+                    10-Boituva
+                    <br>
+                    11-Piedade
                     <br>
                     -Escolher a opção (vendedor 24)
                     <br>
@@ -203,6 +209,8 @@
                     -Clicar e cadastrar a Nota Fiscal (o sistema gerará um código automaticamente);
                     <br>
                     -Encaminhar a Nota Fiscal para o caixa que enviará ao Financeiro.
+                    <br>
+                    -Início de Guarda – Término de Guarda – Alterar Estoque
                 </p>
 
                 <p class="font-weight-bold offset-1">4.4. Devolução de Nota Fiscal formulário (Jurídico)</p>
@@ -319,8 +327,7 @@
                         -Encaminhar a Nota Fiscal para o caixa;
                     </p>
                     <p class="font-weight-bold offset-1 ">4.7. Devolução de Pedido (Devolução/Remessa Consignado)</p>
-                    <p classs="offset-2">
-                        -No Sistema ERPJ acessar o menu (Movimentos – Devoluções/Garantia – Cadastrar Devolução);
+                    <p class="offset-2">-No Sistema ERPJ acessar o menu (Movimentos – Devoluções/Garantia – Cadastrar Devolução);
                         <br>
                         -Preencher a operação com o código 8 (Devolução de Cliente ou 51 Retorno Consignação);
                         <br>
@@ -413,9 +420,51 @@
                         <br>
                         -Sistema gera nº da nota Devolução.
                     </p>
-
-                    <p class="font-weight-bold offset-1">4.10. Devolução em Garantia</p>
+                    <p class="font-weight-bold offset-1">4.10.Entrada de devolução de Cliente Jurídico (Garantia)</p>
                     <p class="offset-2">
+                            -No Sistema ERPJ acessar o menu (Movimento – Devolução/Garantia- Cadastrar Devolução);
+                            <br>
+                            -Preencher a operação com o código 16 (Outras Entradas não Especificadas);
+                            <br>
+                            -O sistema pergunta se a devolução do cliente será emitida pela loja (Não);
+                            <br>
+                            -Qual o tipo de devolução (Por XML);
+                            <br>
+                            -Preencher o motivo da devolução (F8 para consultar);
+                            <br>
+                            -Colocar número da nota fiscal de origem e loja;
+                            <br>
+                            -Na observação colocar: Entrada ref. N/NF XXXX data de emissão, e S/NF XXXX e data de emissão;
+                            <br>
+                            -Clicar em Adicionar Origem, selecionar o caixa;
+                            <br>
+                            -Verificar o modo de pagamento, conforme descrito na ITFI-005 – Contas à pagar;
+                            <br>
+                            -Selecionar o item devolvido;
+                            <br>
+                            -Verificar a quantidade devolvida se é total ou parcial, e fazer a alteração;
+                            <br>
+                            -Informar se deseja adicionar outra origem (SIM ou NÃO);
+                            <br>
+                            -Escolher o tipo de entrada – Garantia;
+                            <br>
+                            -Ler a chave de acesso da nota ou adicionar o XML salvo;
+                            <br>
+                            -Caso o sistema não localize o XML, baixar o XML no Portal do Governo (http://www.nfe.fazenda.gov.br) da nota fiscal do cliente ou informar a chave de acesso quando o sistema solicitar;
+                            <br>
+                            -Preencher o código interno da peça (X e/ou sequência) e quantidade;
+                            <br>
+                            -Data de chegada e código do estoquista;
+                            <br>
+                            -Na observação colocar: Entrada ref. N/NF XXXX data de emissão, e S/NF XXXX e data de emissão;
+                            <br>
+                            -Clicar em cadastrar a Nota Fiscal (o sistema gerará um código automaticamente);
+                            Encaminhar a Nota Fiscal para o caixa que enviará ao Financeiro.
+                            <br>
+                            -Início de Guarda – Término de Guarda – Alterar Estoque
+
+                            <p class="font-weight-bold offset-1">4.11. Devolução em Garantia para fornecedor</p>
+                            <p class="offset-2">
                             -No Sistema ERPJ clicar em (Movimento – Devolução –Garantia);
                             <br>
                             -Preencher a operação com o código 10 (Outras Saídas não Especificadas) ou 29 (Outras Saídas não especificadas tributadas);
@@ -442,7 +491,53 @@
                             <br>
                             -Sistema gera nº da nota Devolução;
                             
-                    </p>
+                        </p>
+                        <p class="font-weight-bold offset-1">4.12. Retorno em garantia do fornecedor</p>
+                            <p class="offset-2">
+                            -Movimentos-Devolução/Garantia-Cadastrar Devolução;
+                            <br>
+                            -Operação =19 DEVOLUÇÃO DO FORNECEDOR (GARANTIA)
+                            <br>
+                            -Tipo devolução= De Fornecedor
+                            <br>
+                            -Número Origem= Número da Nossa NF
+                            <br>
+                            -Colocar na observação: RET TOTAL OU PARCIAL DE GARANTIA REF N/NOTA XXXX DATA  E S/NOTA  XXXX  DATA  
+                            <br>
+                            -Adicionar Origem
+                            <br>
+                            -Selecionar o item devolvido
+                            <br>
+                            -Verificar a quantidade devolvida se é total ou parcial, e fazer a alteração;
+                            <br>
+                            -Informar se deseja adicionar outra origem (SIM ou NÃO);
+                            <br>
+                            -Escolher o tipo de entrada – Estoque;
+                            <br>
+                            -Ler a chave de acesso da nota ou adicionar o XML salvo;
+                            <br>
+                            -Caso o sistema não localize o XML, baixar o XML no Portal do Governo (http://www.nfe.fazenda.gov.br) da nota fiscal do cliente ou informar a chave de acesso quando o sistema solicitar;
+                            <br>
+                            -Preencher o código interno da peça (X e/ou sequência) e quantidade;
+                            <br>
+                            -Data de chegada / Colocar Número de Volume e Espécie
+                            <br>
+                            -Clicar em FORA DA FILA, para o Item Entrar na Fila De Guarda 
+                            <br>
+                            -Locação – Colocar Onde o Volume está Alocado
+                            <br>
+                            -Na observação colocar:  RET TOTAL OU PARCIAL DE GARANTIA REF N/NOTA XXXX DATA  E S/NOTA  XXXX  DATA 
+                            <br> 
+                            -Clicar em cadastrar a Nota Fiscal
+                            <br>
+                            
+                            
+
+
+
+
+
+
                     <p class="font-weight-bold">5. Registros</p>
                     <p class="offset-2">Sistema ERPJ
                     </p>
@@ -478,6 +573,12 @@
                             <td>Revisão geral do documento</td>
                             <td>Ricardo Caetano/ João Paulo Zeppini/ Jael da Silva</td>
                             <td>12/02/2021</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Revisão geral do documento</td>
+                            <td>Ricardo Caetano</td>
+                            <td>24/02/2022</td>
                         </tr>
                     </table>
 
