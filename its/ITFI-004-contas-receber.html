@@ -49,7 +49,7 @@
                                         class="ml-2">ITFI-004</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">04</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">05</output>
                                 </td>
                             </tr>
                         </table>
@@ -94,23 +94,20 @@
                     -Conferir os prazos de todas as lojas no sistema;
                     <br>
                     -Gerar o período da cobrança (Financeiro – Cobrança – Boletos – Períodos – cadastrar), preencher o
-                    campo Cedente=1, período (data inicial e data final) anotar o código do período;
+                    campo Cedente=1, ou Cedente=7, se enviado ao ITAU, período (data inicial e data final) anotar o código do período;
                 </p>
 
                 <div class="container" style="text-align: center; margin: 2rem;">
                     <img src="../imagens/contas-receber-img2.png" class="img-fluid" class="mb-4" />
                 </div>
 
-                <div class="container" style="text-align: center; margin: 2rem;">
-                    <img src="../imagens/contas-receber-img3.png" class="img-fluid" class="mb-4" />
-                </div>
 
                 <p class="offset-2">-Gerar acúmulo (Financeiro – Cobrança – Boletos – Períodos – Consultar Todos –
                     Clicar sobre o Período – Gerar Acúmulos), ordenar pelo valor para ver se não tem nada negativo
                     (quando o valor de devolução é maior que o valor da venda), se houver fazer a exclusão do acúmulo.
                 </p>
                 <div class="container" style="text-align: center; margin: 2rem;">
-                    <img src="../imagens/contas-receber-img4.png" class="img-fluid" width="900" height="800"
+                    <img src="../imagens/contas-receber-img3.png" class="img-fluid" width="900" height="800"
                         class="mb-4" />
                 </div>
 
@@ -136,7 +133,7 @@
                     de clientes especiais”, e alterar no sistema, clicando sobre o nome do cliente, e alterando o prazo
                     (F8 para consultar);
                     <br>
-                    -Verificar valores menor que R$ 20,00, se o cliente possuir mais compras para faturar na semana seguinte, excluir o acúmulo;
+                    -Verificar valores menor que R$ 50,00, se o cliente possuir mais compras para faturar na semana seguinte, excluir o acúmulo;
                     <br>
                     -Conferido tudo, gerar os boletos (Financeiro - Cobrança – Boletos – Períodos – Consultar Todos)
                     clicar sobre o período – Gerar boletos;
@@ -152,29 +149,48 @@
 
                 <p class="font-weight-bold offset-1">4.2. Registrar os boletos em Banco:</p>
                 <p class="offset-2">-No sistema ERPJ acessar o menu Financeiro – Cobrança – Boletos – Gerar arquivos de
-                    Remessa, selecionar o Cedente, cadastrar, gerar remessa, exportar arquivo, anotar o nome do arquivo;
+                    Remessa, selecionar o Cedente(para Itau cedente 7), cadastrar, gerar remessa, exportar arquivo, anotar o nome do arquivo;
                 </p>
-
-                <div class="container" style="text-align: center; margin: 2rem;">
-                    <img src="../imagens/contas-receber-img9.png" class="img-fluid" class="mb-4" />
-                </div>
 
                 <div class="container" style="text-align: center; margin: 2rem;">
                     <img src="../imagens/contas-receber-img10.png" class="img-fluid" class="mb-4" />
                 </div>
-                <p class="offset-2">-Ir no site do banco Santander, e transmitir o arquivo.
+                <p class="offset-2">-Santander:
                     <br> 
+                    -Ir no site do banco Santander, e transmitir o arquivo;
+                    <br>
                     -Arquivo aceito (verde)
                     <br>
-                	-Em caso de erro (vermelho) ir no arquivo salvo, abrir, salvar como, e mudar a Codificação UTF-8, para ANSI, salvar, e reenviar novamente;
+                    -Em caso de erro (vermelho) ir no arquivo salvo, abrir, salvar como, e mudar a Codificação UTF-8, para ANSI, salvar, e reenviar novamente;
                     <br>
-                	-Em caso de alerta (amarelo) consultar o erro, se for erro na inclusão pois o valor da mora/multa é igual a R$ 0,00, ir no boleto, alterar para R$ 0,01, passar para o T.I. retirar desta remessa, para ser enviado na próxima;
+                    -Em caso de alerta (amarelo) consultar o erro, se for erro na inclusão pois o valor da mora/multa é igual a R$ 0,00, ir no boleto, alterar para R$ 0,01, passar para o T.I. retirar desta remessa, para ser enviado na próxima;
+                    <br>
+                    -Itau:
+                    <br>
+                    -Ir no site do banco Itau, Mais, Transmissão de arquivos – Remessa – Enviar
+                    <br>
+                    -Anexar o arquivo salvo – enviar
+                    <br>
+                    -Salvar o arquivo em PDF
+                    
                 </p>
 
                 <p class="font-weight-bold offset-1">4.3. Baixa de duplicatas pagas no banco:</p>
                 <p class="offset-2">
-                    -Imprimir a Francesa no site do banco (www.santanderempresarial.com.br) e baixar no sistema ERPJ
-                    (Financeiro – Cobrança – Boletos – Baixar boletos por arquivo – Ler arquivo – Processar registro);
+                    -Santander:
+                    <br>
+                    -Ir em Transferência de arquivos – baixar arquivo movimento
+                    <br>
+                    -Baixar e imprimir a Francesa
+                    <br>
+                    -No sistema ERPJ (Financeiro – Cobrança – Boletos – Baixar boletos por arquivo – Ler arquivo Movimento – Processar registro);
+                    <br>
+                    -Itau:
+                    <br>
+                    -Ir em Mais – Transmissão de arquivos – Retorno – Recepcionar – Cobrança – Recepcionar
+                    <br>
+                    -Cobrança – Ir página de cobrança – Francesa 15 dias – consultar – data do período – enviar – imprimir em paisagem e baixar no sistema ERPJ (Financeiro – Cobrança – Boletos – Baixar boletos por arquivo – Ler arquivo – Processar registro);
+
                 </p>
 
                 <div class="container" style="text-align: center; margin: 2rem;">
@@ -211,6 +227,10 @@
 
                 <p class="offset-2">-Ir no site do Banco Santander, e comandar a Instrução PROTESTO  (Cobrança e Recebimento – Consultas – Títulos – seleciona o código do Beneficiário – Selecionar Individual – e colar no campo Nosso Número – Exibir – Incluir Instruções – selecionar Protestar e Confirmar;
                     <br>
+                    -Em caso do banco recusar o protesto, é feito o protesto eletrônico, através do site www.site.cenprotnacional.org.br clicar em entrar – utilizar o certificado digital – autenticar – usuário da Auto Geral – confirmar – 
+                    <br>
+                    -Credor – Formulário para Protesto e digitar todas as informações do título.
+                    <br>
                     -Após a entrega do instrumento de protesto pelo Banco, cadastrar no sistema ERPJ (Financeiro – Protestos – Cadastrar)
                     e arquivar.
 
@@ -240,11 +260,10 @@
                 <p class="offset-2">-Em caso de recebimento de Títulos ou Cheques protestados, fazer a baixa no sistema
                     ERPJ, conforme procedimento de baixa de duplicatas, da ITFI-003 (4.4.);
                     <br>
-                    -Entregar para o cliente o Instrumento de Protesto original, para que o mesmo, leve ao cartório.
+                    -Entregar a carta de anuência digital para o cliente (através do site www.site.cenprotnacional.org.br clicar em entrar – utilizar o certificado digital – autenticar – usuário da Auto Geral – confirmar) 
                     <br>
-                    -Alguns cartórios, exigem também, a carta de anuência, neste caso, preencher o formulário FFI-009 e reconhecer firma da assinatura;
-                    <br>
-                    -Os protestos, só serão enviados para as filiais, após a confirmação da baixa no sistema.
+                    -Credor – Autorização para Cancelamento de Protesto – digitar os dados do protesto
+                    
 
                 </p>
 
@@ -256,8 +275,6 @@
                         FFI-007 – Prazos especiais para faturas
                         <br>
                         FFI-008 – Carta de solicitação de endereço
-                        <br>
-                        FFI-009 – Carta de anuência
                         <br>
                         (Sem códigos) - Francesas bancárias (própria do banco) 
                         <br>
@@ -304,6 +321,12 @@
                         <td>Revisão geral do documento</td>
                         <td>Aline Ramos</td>
                         <td>13/03/2021</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Revisão geral do documento</td>
+                        <td>Aline Ramos</td>
+                        <td>27/01/2022</td>
                     </tr>
                 </table>
 

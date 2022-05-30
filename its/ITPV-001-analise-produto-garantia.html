@@ -48,7 +48,7 @@
                                         class="ml-2">ITPV-001</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">04</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">05</output>
                                 </td>
                             </tr>
                         </table>
@@ -99,13 +99,15 @@
                     <br>
                     - Verificar se o código do fabricante corresponde com o produto adquirido.
                     <br>
+                    - OBS: Cliente Jurídico, solicitar a nota fiscal de devolução com CFOP 5949 ou 6949 (Interestadual) e dar entrada no sistema ERPJ conforme ITFI-002, item 4.10. 
+                    <br>
                     <b>Nota 1:</b>Consultar o formulário FPV-001 Procedimento de Garantia de Fornecedores, onde constam
                     os fabricantes que fornecem garantia 100% e os que solicitam análise técnica.
                     <br>
                     <b>Nota 2:</b>O auxiliar de garantia da Matriz responsável pelo acompanhamento da garantia com os
                     fornecedores atualizará o formulário conforme necessidade.
                     <br>
-                    <b>Nota 3:</b>Em casos onde o valor do frete, for maior que o valor da mercadoria, o auxiliar de garantia da matriz, deverá dar a baixa no sistema, como avaria.
+                    
                 </p>
 
                 <p class="font-weight-bold offset-1">4.2 Para conceder a garantia deve-se fazer uma análise visual
@@ -124,27 +126,29 @@
                     -Se o veículo for GNV (peça de motor) não tem garantia
                 </p>
 
-                <p class="font-weight-bold offset-1">4.3 Após análise visual a garantia pode ser procedente ou sujeita à
+                <p class="font-weight-bold offset-1">4.3 Após análise visual a garantia pode ser procedente (100%) ou sujeita à
                     análise técnica do fornecedor:</p>
                 <p class="font-weight-bold offset-1">4.3.1 Se for procedente, verificar com o cliente.</p>
                 <p class="offset-2"> - A substituição da peça por outra já existente no estoque
                     <br>
                     - Encomendar de uma nova peça
                     <br>
-                    - Geração de crédito para uma compra futura
-                    <br>
-                    - Verificar com o caixa a melhor forma da devolução do dinheiro
+                    - Caso o cliente não queira outra peça, realizar a devolução conforme item 4.3. e 4.4. da ITPV-003 – Devolução do cliente
                     <br>
                     - Consultar o FPV-002 – Devolução de Clientes
                 </p>
 
-                <p class="offset-1">Emite-se uma nota de devolução dando entrada no estoque de garantia e um romaneio
-                    gerando a venda, caso necessário. Adiciona no campo da observação o número do documento de compra,
-                    data de emissão do produto adquirido e motivo</p>
-
-                <p class="offset-1">Emite-se uma nota de venda para o cliente</p>
+                <p class="offset-1">Emite-se uma nota de devolução dando entrada no estoque de garantia, com modo de pagamento 143 (adiantamento), caso o cliente queira outra peça, gerar uma nova venda, com o modo de pagamento 143 (adiantamento), para utilizar o crédito. Se o cliente for Jurídico, emite-se a nota com operação 10 - REMESSA DE GARANTIA. Adiciona no campo da observação o número do documento de compra, data de emissão do produto adquirido e motivo.</p>
 
                 <p class="font-weight-bold offset-1">4.3.2 Produto sujeito à análise técnica</p>
+               
+                <p class="offset-2">Para os casos em que o cliente deseja a substituição da peça antes do laudo:
+                    <br>
+                    - Cliente faturado com cadastro liberado é fornecido uma peça em consignação, onde é gerado uma nota com o modo de pagamento 20 (Garantia) colocando na observação aguardar garantia até que volte o laudo do fornecedor, ou a peça;
+                    <br>
+                    - Cliente à vista é realizado uma nova venda, caso o laudo retorne como procedente, entrar em contato com cliente informando o resultado e que será gerado um crédito, ou devolução do dinheiro; ou verificar com o setor financeiro, a possibilidade da abertura do cadastro faturado.
+                    <br>
+               
                 <p class="offset-2">- Cadastra a devolução no sistema ERPJ utilizando a tela
                     Movimentos/Devoluções/Garantias para dar entrada no estoque de garantia, nos casos das filiais, enviar para matriz; </p>
 
@@ -159,65 +163,50 @@
 
                 <p class="offset-2">Conforme atualização do fornecedor, o auxiliar de garantia da matriz, anexa os laudos, e finaliza o processo de garantia;</p>
 
-                <p class="font-weight-bold offset-1">- Para os casos em que o cliente deseja a substituição da peça
-                    antes do laudo:</p>
-                <br>
-                <p class="offset-2">- Cliente faturado com cadastro liberado é fornecido uma peça em consignação, onde é
-                    gerado uma nota com o modo de pagamento 20 (garantia), colocando a observação (aguardar garantia) ate que volte o laudo do fornecedor, ou a peça;
-                    <br>
-                    -Cliente à vista é realizado uma nova venda, caso o laudo retorne como procedente, entra com contato
-                    com cliente informando o resultado e que será gerado um crédito, ou a devolução do dinheiro;
-                </p>
-                <p class="font-weight-bold offset-1">4.3.3 - Recebimento de transferência em garantia:</p>
-                <p class="offset-2">-Identificação do produto etiquetado com o código interno, segrega o produto em
-                    local destinado (prateleira vermelha).
+            </p>
+            <p class="font-weight-bold offset-1">4.3.3 - Emissão da nota de transferência das filiais para a Matriz</p>
+            <p class="offset-2">-No ERPJ ir em (Movimentos – Devoluções/garantia – cadastrar devolução) 
+                <br>-Operação 41 – Transferência (saida) – Garantia, 
+                <br>-Tipo de devolução – transferência (garantia)
+                <br>-Cliente – 1.1 matriz
+                <br>-Adicionar devolução para transferência
+                <br>-Seleciona as notas de devolução
+                <br>-Criar devolução de transferência (Garantia)
+                <br>-Enviar para Matriz, todos os dias.
+                
 
-                    <br>-O auxiliar de garantia da matriz envia a peça ao fornecedor para análise técnica;
-                    <br>
-                    -Após recebimento do laudo pela matriz, o auxiliar de garantia entra em contato com o cliente e/ou
-                    responsável das filiais para informar resultado;
-                    <br>
-                    <br>
-                    -<b>Em caso de laudo procedente cliente faturado: </b>
+                </p>
+                <p class="font-weight-bold offset-1">4.3.4 - Recebimento de transferência em garantia:</p>
+                <p class="offset-2">•	Identificação do produto etiquetado com o código interno, via do formulário preenchido pelo ERPJ, formulário FPV-005 – Solicitação de garantia
+                </p>
+                <p class="font-weight-bold offset-1">4.3.5 - Envio para o fornecedor:</p>
+                    <br>-O responsável de garantia da matriz envia a peça ao fornecedor para análise técnica. Conforme ITPV-002;
+                    <br> -Após recebimento do laudo pela matriz, o responsável de garantia entra em contato com o cliente e/ou
+                    responsável das filiais para informar resultado
+                    -<b>Em caso de laudo procedente: </b>
                     <br>
                     -<b>1º opção cliente levou a peça antes do laudo.</b> Anota na observação da nota fiscal que a garantia foi procedente.
                     <br>
                     -<b>2º opção cliente aguardando laudo.</b> Será realizado uma nova venda com o modo de pagamento
-                    garantia.
+                    garantia,conforme a nota fiscal de origem da entrada da garantia. Caso o cliente não queira outra peça, gerar também uma nota de devolução com modo de pagamento 2 (a prazo) para ficar de crédito, ou 1 (a vista) para devolver em dinheiro. Neste caso, verificar se o boleto está quitado.
+                    <br>
+                    -<b>3º opção cliente levou a peça antes do laudo (pagou a 2º peça)</b>.Será necessário gerar o crédito, ou devolução do valor;
+                    <br>
                 </p>
 
-                <p class="offset-2">-<b>Em caso de laudo procedente cliente á vista:</b>
-                    <br>
-                    -<b>1º opção cliente levou a peça antes do laudo (pagou a 2º peça).</b> Será necessário gerar o
-                    crédito, ou a devolução do valor.
-                    <br>
-                    -<b>2º opção cliente aguardando laudo.</b> Será realizado uma nova venda com o modo de pagamento
-                    garantia.
-                </p>
-
-                <p class="offset-2">-<b>Em caso de laudo improcedente cliente faturado:</b>
+                <p class="offset-2">-<b>Em caso de laudo improcedente cliente faturado/ à vista :</b>
                     <br>
                     -<b>1º opção cliente levou a peça antes do laudo.</b> Será necessário avisar ao financeiro para
-                    gerar cobrança da segunda venda (alterando o modo de pagamento para 2 à prazo), e devolvido o produto com o laudo para o cliente.
+                    gerar cobrança da segunda venda (alterando o modo de pagamento para 2 à prazo), e devolvido o produto com o laudo para o cliente, no caso de cliente a vista, devolver o produto.
                     <br>
-                    -<b>2º opção cliente aguardando laudo.</b> Será devolvido o produto para o cliente e realizada a
+                    -<b>2º opção cliente aguardando laudo.</b> Será devolvido o produto para o cliente e realizada a cobrança, no caso de cliente a vista, devolver o produto com laudo técnico.
                     cobrança.
                     <br>
-                    <br>
-
-                    <p class="offset-2">-<b>Em caso de laudo improcedente cliente à vista: </b>
-                    <br>1º opção cliente levou a peça antes do laudo (pagou a 2º peça).  Entrar em contato informando o laudo e devolver o produto.
-                    <br>
-                    2º opção cliente aguardando laudo. Entrar em contato informando o laudo e devolver o produto. 
-                    <br>
-                    <br>
+                    
                     <b>Nota 1:</b> Todos os produtos de garantia são identificados com etiqueta de produto não conforme
                     e alocados em prateleira e pallet identificados com a cor vermelha.
                     <br>
-                    <b>Nota 2:</b> Semanalmente as filiais emitem NF de transferência dos produtos em garantia, para
-                    matriz, com exceção de bateria, ressarcimento de mão de obra que é emitido logo após o processo de
-                    entrada no estoque.
-                    <br>
+                    
                 </p>
 
                 <p class="font-weight-bold">5 Registros</p>
@@ -230,6 +219,8 @@
                 (FPV-001) Procedimento de Garantia de Fornecedores
                 <br>
                 (FPV-002) Devolução de Clientes
+                <br>
+                (FPV-005) Solicitação de garantia
                 </p>
 
                 <p class="font-weight-bold">6 Histórico das Revisões</p>
@@ -270,7 +261,12 @@
                         <td>Jael da Silva</td>
                         <td>17/02/21</td>
                     </tr>
-
+                    <tr>
+                        <td>05</td>
+                        <td>Revisão geral do documento</td>
+                        <td>Ricardo Caetano</td>
+                        <td>24/03/22</td>
+                    </tr>
                 </table>
 
             </div>
