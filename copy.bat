@@ -1,1 +1,1 @@
-robocopy \\matrizinf28\c$\users\yann.silveira\documents\manuais\iso-ag \\ad01\iso$ /e /purge
+robocopy \\matrizadm22\c$\users\jesiel\Desktop\iso-ag \\ad01\iso$ /e /purge
