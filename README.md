@@ -1,7 +1,8 @@
 # iso-ag
 Projeto da ISO da Auto Geral simples, isto é que não envolve maven ou Spring MVC, atualizado mensalmente com os gráficos e índices.
 
-## Configurações
+## Atualizar o ISO AG
+### Configurações
 
 1º Editar o arquivo 'copy.bat', mudar o caminho alterando o nome do seu computador e a localização do projeto na sua maquina. Exemplo:  
   Original = robocopy \\matrizadm22\c$\users\jesiel\Desktop\iso-ag \\ad01\iso$ /e /purge.  
