@@ -1,5 +1,12 @@
 # iso-ag
 Projeto da ISO da Auto Geral simples, isto é que não envolve maven ou Spring MVC, atualizado mensalmente com os gráficos e índices.
 
-Para Realizar o deploy da aplicação é necessário rodar o copy.bat comando que fará o processo do deploy automaticamente. Porém, quando clonar o projeto pela primeira ver
-será necessário alterar o bat usando qualquer editor de texto que preferir, após o comando robocopy passe altere o caminho exato de onde o projeto está localizado em sua máquina.
+## Configurações
+
+1º Editar o arquivo 'copy.bat', mudar o caminho alterando o nome do seu computador e a localização do projeto na sua maquina. Exemplo:
+  Original = robocopy \\matrizadm22\c$\users\jesiel\Desktop\iso-ag \\ad01\iso$ /e /purge
+  Modificado = robocopy \\matrizinf34\c$\users\vinicius.escano\Documents\Projetos\iso-ag \\ad01\iso$ /e /purge 
+
+2º Salve a alteração e rode o 'copy.bat'.
+
+Se tudo estiver certo os arquivos serão atualizados e o cmd irá fechar. Depois é só conferir no isoag.com se os indicadores foram atualizados.
