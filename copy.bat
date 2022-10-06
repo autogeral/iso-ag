@@ -1,1 +1,1 @@
-robocopy \\matrizadm22\c$\users\jesiel\Desktop\iso-ag \\ad01\iso$ /e /purge
+robocopy \\localhost\c$\users\vinicius.fernandes\Documents\IntellijProjects\iso-ag \\ad01\iso$ /e /purge
