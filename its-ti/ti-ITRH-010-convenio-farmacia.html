@@ -1,168 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <title>Auto Geral - ISO 9001</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Auto Geral - ISO 9001</title>
 
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/bootstrap.min.css" />
-        <link rel="stylesheet" href="../css/print.css" media="print" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/print.css" media="print" />
 
-        <script>
-            (function (h, o, t, j, a, r) {
-                h.hj =
-                    h.hj ||
-                    function () {
-                        (h.hj.q = h.hj.q || []).push(arguments);
-                    };
-                h._hjSettings = { hjid: 1633832, hjsv: 6 };
-                a = o.getElementsByTagName("head")[0];
-                r = o.createElement("script");
-                r.async = 1;
-                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(
-                window,
-                document,
-                "https://static.hotjar.com/c/hotjar-",
-                ".js?sv="
-            );
-        </script>
-    </head>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1633832, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
 
-    <body>
-        <div class="d-flex" id="wrapper">
-            <object class="menuLateral" data="../index.html"></object>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <object class="menuLateral" data="../index.html"></object>
 
-            <div id="page-content-wrapper" style="overflow-y: auto">
-                <div class="container-fluid">
-                    <div class="row mark">
-                        <div class="col"></div>
-                        <div class="col mb-4">
-                            <h4 class="mt-4" style="text-align: center">
-                                Instrução de Trabalho
-                            </h4>
-                            <h4 class="mt-4" style="text-align: center">
-                                {Escreva o Título do Projeto}
-                            </h4>
-                        </div>
-                        <div class="col mt-4">
-                            <table border="0px" cellpadding="3px">
-                                <tr>
-                                    <td>
-                                        <output class="font-weight-bold"
-                                            >Código:</output
-                                        >
-                                        <output class="ml-2"
-                                            >IT{Escreva o código no formato
-                                            XY-000}</output
-                                        >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <output class="font-weight-bold"
-                                            >Revisão:</output
-                                        >
-                                        <output class="ml-2"
-                                            >{Escreva o número da última revisão
-                                            do documento}</output
-                                        >
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <table
-                        border="1px"
-                        cellpadding="5px"
-                        style="text-align: center; width: 100%"
-                        class="mt-2"
-                    >
-                        <tr>
-                            <th colspan="3">Elaboração</th>
-                            <th colspan="3">Aprovação</th>
-                        </tr>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Visto</th>
-                            <th>Data</th>
-                            <th>Nome</th>
-                            <th>Visto</th>
-                            <th>Data</th>
-                        </tr>
-                        <tr>
-                            <td>{Escreva o nome de quem elaborou o projeto}</td>
-                            <td></td>
-                            <td>
-                                {Escreva a data do visto de elaboração no
-                                formato DD/MM/AAAA}
-                            </td>
-                            <td>{Escreva a data de quem aprovou o projeto}</td>
-                            <td></td>
-                            <td>
-                                {Escreva a data do visto de aprovação no formato
-                                DD/MM/AAAA}
-                            </td>
-                        </tr>
-                    </table>
-
-                    <p class="font-weight-bold mt-2">1. Objetivo</p>
-                    <p class="offset-2">{Escreva o objetivo do projeto.}</p>
-
-                    <p class="font-weight-bold">2. Referências</p>
-                    <p class="offset-2">{Escreva as referências do projeto.}</p>
-
-                    <p class="font-weight-bold">3. Definições</p>
-                    <p class="offset-2">{Escreva as definições do projeto.}</p>
-
-                    <p class="font-weight-bold">
-                        4. Procedimentos e Responsabilidades
-                    </p>
-                    <p class="font-weight-bold offset-1"></p>
-
-                    <p class="offset-2">
-                        {4.1. Escreva o subtítulo da subseção.}
-                    </p>
-
-                    <p class="offset-2">
-                        {4.n. Se necessário, acrescente mais subseções com seu
-                        respectivo título.}
-                    </p>
-
-                    <p class="font-weight-bold">5. Registros</p>
-
-                    <p class="font-weight-bold">6. Histórico de Revisões</p>
-                    <table
-                        border="1px"
-                        cellpadding="5px"
-                        style="text-align: center; width: 100%"
-                        class="mt-2 mb-4"
-                    >
-                        <tr style="background: #ccc">
-                            <th>Revisão</th>
-                            <th>Descrição</th>
-                            <th>Revisor</th>
-                            <th>Data</th>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>{Escreva a descrição da revisão}</td>
-                            <td>{Escreva o nome do Revisor}</td>
-                            <td>
-                                {Escreva a data da revisão no formato
-                                DD/MM/AAAA}
-                            </td>
-                        </tr>
-                        <td>01</td>
-                        <td>{Escreva a descrição da revisão}</td>
-                        <td>{Escreva o nome do Revisor}</td>
-                        <td>
-                            {Escreva a data da revisão no formato DD/MM/AAAA}
-                        </td>
-                    </table>
-                </div>
+      <div id="page-content-wrapper" style="overflow-y: auto">
+        <div class="container-fluid">
+          <div class="row mark">
+            <div class="col"></div>
+            <div class="col mb-4">
+              <h4 class="mt-4" style="text-align: center">
+                Instrução de Trabalho
+              </h4>
+              <h4 class="mt-4" style="text-align: center">Convênio Farmácia</h4>
             </div>
+            <div class="col mt-4">
+              <table border="0px" cellpadding="3px">
+                <tr>
+                  <td>
+                    <output class="font-weight-bold">Código:</output>
+                    <output class="ml-2"
+                      >IT{Escreva o código no formato XY-000}</output
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <output class="font-weight-bold">Revisão:</output>
+                    <output class="ml-2">00</output>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <table
+            border="1px"
+            cellpadding="5px"
+            style="text-align: center; width: 100%"
+            class="mt-2"
+          >
+            <tr>
+              <th colspan="3">Elaboração</th>
+              <th colspan="3">Aprovação</th>
+            </tr>
+            <tr>
+              <th>Nome</th>
+              <th>Visto</th>
+              <th>Data</th>
+              <th>Nome</th>
+              <th>Visto</th>
+              <th>Data</th>
+            </tr>
+            <tr>
+              <td>Anna Luisa Pelegrini Giaj-Levra</td>
+              <td></td>
+              <td>30/05/2023</td>
+              <td>Murilo de Moraes Tuvani</td>
+              <td></td>
+              <td>30/05/2023</td>
+            </tr>
+          </table>
+
+          <p class="font-weight-bold mt-2">1. Objetivo</p>
+          <p class="offset-2">
+            O objetivo desta instrução de trabalho é orientar sobre o
+            procedimento para a geração de arquivos de Convênio Farmácia para
+            lançamento por importação de arquivos no Sage, diminuindo o trabalho
+            manual.
+          </p>
+
+          <p class="font-weight-bold">2. Referências</p>
+          <p class="offset-2">
+            O repositório para o projeto Folha está disponível em:
+            <a href="https://source.cloud.google.com/folha-s/folha"
+              >https://source.cloud.google.com/folha-s/folha</a
+            >
+          </p>
+
+          <p class="font-weight-bold">3. Definições</p>
+
+          <p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
+          <p class="font-weight-bold offset-1"></p>
+
+          <p class="offset-2">4.1. Clonar o projeto</p>
+
+          <p class="offset-2">
+            4.2. Criar o banco de dados folha na máquina local
+          </p>
+          <p class="offset-2">
+            4.3. Cadastrar as unidades Auto Geral se necessário
+          </p>
+          <div style="text-align: center">
+            <img
+              src="../imagens/unidadeOrganizacional.png"
+              class="mb-4"
+              width="1200px"
+            />
+          </div>
+          <p class="offset-2">
+            4.4. Solicitar à Infra a liberação da na porta do servidor com a
+            máquina do Sage
+          </p>
+          <p class="offset-2">
+            4.5. Criar conexão com o banco postgresql, solicitar as credenciais
+            com o supervisor do TI
+          </p>
+          <div style="text-align: center">
+            <img src="../imagens/conexaosage.png" class="mb-4" width="1200px" />
+          </div>
+          <p class="offset-2">
+            4.6. A conexão é criada em FuncionarioSageService
+          </p>
+          <p class="offset-2">
+            4.7. Rodar o projeto, ele será inicializado na porta 8090
+          </p>
+          <p class="offset-2">
+            4.8. Enviar os arquivos de retorno, é possível realizar o upload de
+            vários arquivos
+          </p>
+          <div style="text-align: center">
+            <img
+              src="../imagens/uploadfarmacia.png"
+              class="mb-4"
+              width="1200px"
+            />
+          </div>
+          <div style="text-align: center">
+            <img
+              src="../imagens/enviofarmacia.png"
+              class="mb-4"
+              width="1200px"
+            />
+          </div>
+          <p class="offset-2">
+            4.9. Selecionar o período que irá gerar o arquivo
+          </p>
+          <div style="text-align: center">
+            <img
+              src="../imagens/sageperiodofarmacia.png"
+              class="mb-4"
+              width="1200px"
+            />
+          </div>
+          <p class="offset-2">
+            4.10. Será criado o arquivo Zip, importar cada um a sua respectiva
+            loja no Sage
+          </p>
+          <div style="text-align: center">
+            <img
+              src="../imagens/farmaciaArquivos.png"
+              class="mb-4"
+              width="1200px"
+            />
+          </div>
+          <p class="font-weight-bold">5. Registros</p>
+          <table
+            border="1px"
+            cellpadding="1px"
+            style="text-align: center; width: 100%"
+            class="mt-2"
+          >
+            <tr>
+              <th>MySQL</th>
+              <th>JDK</th>
+              <th>Spring Boot</th>
+            </tr>
+            <tr>
+              <td>5.7</td>
+              <td>8</td>
+              <td>2.2.4</td>
+            </tr>
+          </table>
+          <p class="font-weight-bold">6. Histórico de Revisões</p>
+          <table
+            border="1px"
+            cellpadding="5px"
+            style="text-align: center; width: 100%"
+            class="mt-2 mb-4"
+          >
+            <tr style="background: #ccc">
+              <th>Revisão</th>
+              <th>Descrição</th>
+              <th>Revisor</th>
+              <th>Data</th>
+            </tr>
+            <tr>
+              <td>00</td>
+              <td>Emissão inicial</td>
+              <td>Anna Luisa Pelegrini Giaj-Levra</td>
+              <td>30/05/2023</td>
+            </tr>
+          </table>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
