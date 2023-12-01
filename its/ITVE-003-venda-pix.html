@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Auto Geral - ISO 9001</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/print.css" media="print" />
+
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: 1633832, hjsv: 6 };
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  </script>
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <object class="menuLateral" data="../index.html"></object>
+
+    <div id="page-content-wrapper" style="overflow-y: auto">
+      <div class="container-fluid">
+        <div class="row mark">
+          <div class="col"></div>
+          <div class="col mb-4">
+            <h4 class="mt-4" style="text-align: center">
+              Instrução de Trabalho
+            </h4>
+            <h4 class="mt-4" style="text-align: center">
+              Pagamentos de Vendas PIX
+            </h4>
+          </div>
+          <div class="col mt-4">
+            <table border="0px" cellpadding="3px">
+              <tr>
+                <td>
+                  <output class="font-weight-bold">Código:</output>
+                  <output class="ml-2">IT{Escreva o código no formato XY-000}</output>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <output class="font-weight-bold">Revisão:</output>
+                  <output class="ml-2">{Escreva o número da última revisão do documento}</output>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <table border="1px" cellpadding="5px" style="text-align: center; width: 100%" class="mt-2">
+          <tr>
+            <th colspan="3">Elaboração</th>
+            <th colspan="3">Aprovação</th>
+          </tr>
+          <tr>
+            <th>Nome</th>
+            <th>Visto</th>
+            <th>Data</th>
+            <th>Nome</th>
+            <th>Visto</th>
+            <th>Data</th>
+          </tr>
+          <tr>
+            <td>Paulo Henrique Vieira Mujollo</td>
+            <td></td>
+            <td>
+              01/12/2023
+            </td>
+            <td>{Escreva o nome de quem aprovou o projeto}</td>
+            <td></td>
+            <td>
+              {Escreva a data do visto de aprovação no formato DD/MM/AAAA}
+            </td>
+          </tr>
+        </table>
+
+        <p class="font-weight-bold mt-2">1. Objetivo</p>
+        <p class="offset-2">Esta Instrução de Trabalho tem como objetivo definir o processo a ser feito pelos vendedores
+          e caixas para gerar e confirmar pagamento com PIX no cadastro de um Romaneio automaticamente pelo sistema
+          ERPJ.</p>
+
+        <p class="font-weight-bold">2. Referências</p>
+        <p class="offset-2">Não aplicável</p>
+
+        <p class="font-weight-bold">3. Definições</p>
+        <p class="offset-2">Não aplicável</p>
+
+        <p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
+        <br>
+
+        <p class="font-weight-bold offset-1">4.1 Pagamento Pix no Romaneio</p>
+        <p class="offset-2">Os passos abaixo instruíram o processo a ser realizado para gerar e confirmar um pagamento
+          com PIX diretamente no Romaneio</p>
+        <br>
+
+        <p class="font-weight-bold offset-2">4.1.1 Cadastro do Romanenio com Modo de Pagamento 664 - PIX</p>
+        <p class="offset-2">
+          Durante o cadastro de um novo Romaneio, adicione o modo de pagamento o 664 - PIX. Este será
+          o único procedimento durante o cadastro, conforme imagem à baixo:
+        </p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-cadastro-romaneio-modo-pagamento-664.png" class="mb-4 " width="900px" />
+        </div>
+
+        <p class="offset-2">
+          É importante notar que, durante o processo de cadastro, na aba de Pagamentos, três botões relacionados ao
+          pagamento Pix estarão desabilitados, sendo eles: Gerar Pix, Verificar Pagamento Pix e QrCode Pix, conforme
+          imagem abaixo:
+        </p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-botoes-aba-pagamentos-romaneio.png" class="mb-4 " width="900px" />
+        </div>
+
+        <p class="font-weight-bold offset-2">4.1.2 Gerando o Pix</p>
+        <p class="offset-2">
+          Os PIX são gerados automaticamente ao cadastrar com o Romaneio.
+          Logo após a efetivação do cadastro uma tela com o QrCode e o Codigo Copia e Cola do PIX irá aparecer, conforme
+          imagem à baixo:
+          ß</p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-qrcode.png" class="mb-4 " width="900px" />
+        </div>
+        <p class="offset-2">
+          Note que após o PIX ter sido gerado, os botões Verificar Pagamento Pix e QrCode Pix foram
+          habilitados.
+        </p>
+        <p class="offset-2">
+          Caso a tela do QrCode seja fechada clique no Botão QrCode Pix para viasulizar novamente
+          Além disso é importante salientar que que o PIX gerado tem validade de 01h para que o pagamento
+          seja realizado, caso contrário um novo PIX deverá ser gerado. Neste caso o botão "Gerar Pix" será
+          habilitado e um novo PIX deverá ser gerado, e da mesma forma disponibilizado um novo QrCode e
+          Codigo Copia e Cola para pagamento.
+        </p>
+        <br>
+
+        <p class="font-weight-bold offset-2">4.1.3 Pagamento do Pix pelo cliente</p>
+        <p class="offset-2">
+          Com o PIX gerado, o cliente poderá realizar o pagamento em seu banco apenas escaneando o QrCode
+          na tela.
+        </p>
+        <p class="offset-2">
+          O valor e a conta do banco Sicoob da Auto Geral, para qual o PIX será feito, já estarão configurados
+          automaticamente, além disso, uma mensagem informando o número do pedido deverá aparecer,
+          sendo necessário apenas o cliente realizar o pagamento, conforme a imagem abaixo:
+        </p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-pagamento-cliente.png" class="mb-4 " width="300px" />
+        </div>
+        <p class="offset-2">
+          Caso o cliente não consiga escanear o QrCode, poderá ser passado o Código Copia e Cola, da mesma
+          forma, o PIX já estará configurado e deverá ser realizado o pagamento pelo cliente.
+        </p>
+        <br>
+
+        <p class="font-weight-bold offset-2">4.1.4 Confirmação do Pagamento</p>
+        <p class="offset-2">Peça ao cliente que informe o pagamento assim que realizado.</p>
+        <p class="offset-2">Após, clique no botão Verificar Pagamento Pix para verificar se o pagamento realizado foi efetivado no banco.</p>
+        <p class="offset-2">
+          Caso o pagamento tenha sido efetivado, na aba de Pagamentos o modo de pagamento Pix deverá ter
+          o status alterado para "APROVADO", caso contrário o pagamento deverá continuar com o status
+          "ABERTO".
+        </p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-confirmacao-pagamento-romaneio.png" class="mb-4 " width="900px" />
+        </div>
+        
+        
+        <p class="font-weight-bold offset-2">4.1.5 Consulta dos Pix</p>
+        <p class="offset-2">
+          Todos os PIX gerados podem ser consultados na tela de Consulta de PIX, onde serão exibidas todas
+          as informações do PIX:
+        </p>
+        <p class="offset-2">Na menu do financeiro, na opção Pix, o menu consultar Consultar estará habilitado, conforme imagem abaixo:</p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-menu-consultar-pix.png" class="mb-4 " width="900px" />
+        </div>
+        <div style="text-align: center">
+          <img src="../imagens/pix-lista-de-pix.png" class="mb-4 " width="900px" />
+        </div>
+        <p class="offset-2">Ao selecionar um Pix, todas as informações referentes a este serão exibidas, conforme imagem abaixo:</p>
+        <div style="text-align: center">
+          <img src="../imagens/pix-tela-pix.png" class="mb-4 " width="900px" />
+        </div>
+
+
+
+
+        <p class="font-weight-bold">5. Registros</p>
+        <p class="offset-2">Sistema ERPJ</p>
+
+
+        <p class="font-weight-bold">6. Histórico de Revisões</p>
+        <table border="1px" cellpadding="5px" style="text-align: center; width: 100%" class="mt-2 mb-4">
+          <tr style="background: #ccc">
+            <th>Revisão</th>
+            <th>Descrição</th>
+            <th>Revisor</th>
+            <th>Data</th>
+          </tr>
+          <tr>
+            <td>00</td>
+            <td>{Escreva a descrição da revisão}</td>
+            <td>{Escreva o nome do Revisor}</td>
+            <td>{Escreva a data da revisão no formato DD/MM/AAAA}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
