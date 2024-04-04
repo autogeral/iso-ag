@@ -90,37 +90,79 @@
                 <p>Não aplicável.</p>
 
                 <p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
+                    <p>
+                        Receba o FRH-006 preenchido, verifique se é solicitado a criação de uma conta Microsoft 365.
+                        Caso solicitado, siga toda a instrução, caso contrário, siga diretamente a partir do índice {[substituir pela referencia correta]}
+                    </p>
 
-                <p class="font-weight-bold offset-1">4.1 Preenchimento do Formulário Eletrônico:</p>
+                <p class="font-weight-bold offset-1">4.1 Adicionar um usuário ao Microsoft 365</p>
 
-                <p class="offset-2">• Receber o formulário de cadastro/mudança de funcionário no sistema.
-                    <br>
-                    •	Abrir a área de trabalho remota do AD01 ou BD01;
-                    <br>
-                    • Acesse o Usuários e computadores do Active Directory, então acesse a pasta de usuários.
+                <p class="offset-2">
+                    <span class="font-weight-bold">Pré-condição:</span> receber o FRH-006 com o campo "Microsoft 365
+                    (e-mail)" marcado em "SIM".<br>
+                    <span class="font-weight-bold">Acessar admin center do Microsoft 365</span><br>
+                    Acesse <a target="_blank" href="https://admin.microsoft.com/#/users">Usuários ativos - admin center do Microsoft 365</a>
+                    com sua conta de administrador;<br>
+                    Ao acessar, clique em "Adicionar um usuário".
                 </p>
 
                 <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img1.png" width=540 height=400 class="mb-4" />
+                    <img src="../imagens/ITMA-007/admin_center_active_users.png" width=auto height=550 class="mb-4" />
                 </div>
 
-
-                <p class="offset-2">•Feito isso, clique com o botão direito sobre o usuário a ser copiado, clique em copiar, preencha as informações na tela que vai se abrir e clique em avançar, como demonstram as imagens a seguir:</p>
+                
+                <p class="offset-2">
+                    <span class="font-weight-bold">Informações básicas</span><br>
+                    Conforme a imagem abaixo, em Adicionar um usuário, preencha os campos 'Nome' e 'Sobrenome' com as informações da FRH-006;<br>
+                    O campo 'Nome de exibição' é preenchido automaticamente ao terminar de escerever os campos anteriores;<br>
+                    Para o 'Nome de usuário' use o primeiro nome e último sobrenome separados por um ponto (.).
+                    Somente caso o nome de usuário não estiver disponível, crie um diferente, mas ainda usando o formato "nome.exemplo";<br>
+                    Você pode desselecionar a opção "Criar uma senha automaticamente" e para criar uma mais fácil de ser comunicada;<br>
+                    MANTENHA SELECIONADA A OPÇÃO "Exigir que este usário altere a senha quando entrar pela primeira vez";<br>
+                    Para evitar que seja necessário redefinir a senha em caso de esquecimento, destine para si mesmo a senha provisória deste usuário;<br>
+                    Clique em 'Avançar'.
+                </p>
 
                 <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img2.png" width=440 height=400 class="mb-4" />
+                    <img src="../imagens/ITMA-007/informacoes_basicas.png" width=auto height=550 class="mb-4" />
                 </div>
                
-                <p class="offset-2">• Coloque a senha padrão (12345678), indique que o usuário deve mudar a senha no
-                    primeiro acesso e clique em avançar</p>
+                <p class="offset-2">
+                    <span class="font-weight-bold">Licenças do produto</span><br>
+                    Para que o usuário possa acessar os recursos com a conta Microsoft 365 é necessário que seja atribuída
+                    uma licença como a Microsoft 365 Business Basic, que dá acesso a aplicações online, acessíveis pelo navegador, incluindo Outlook, Excel,
+                    Word, Teams. Já a Microsoft 365 Business Standard disponibiliza algumas aplicações em suas versões desktop.
+                    Selecione a que mais se adapta as necessidades do colaborador, é preferivel que a versão Standard seja atribuída apenas a cargos de gestão.
+                    Mais abaixo na mesma tela, é possível verificar a lista de aplicativos disponibilizados com a licença selecionada.<br>
+                    Clique em 'Avançar'.
+                </p>
+
                 <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img4.png" width=340 height=300 class="mb-4" />
+                    <img src="../imagens/ITMA-007/licencas_do_produto.png" width=auto height=550 class="mb-4" />
                 </div>
 
-                <p class="offset-2">•Confira as informações e clique em concluir:</p>
+                <p class="offset-2">
+                    <span class="font-weight-bold">Configurações opcionais</span><br>
+                    Não fazemos uso das Configurações opcionais. Não é necessário preencher os campos de informações
+                    de perfil.<br>
+                    Clique em 'Avançar'.
+                </p>
+
                 <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img5.png" width=340 height=300 class="mb-4" />
+                    <img src="../imagens/ITMA-007/configuracoes_opcionais.png" width=auto height=550 class="mb-4" />
                 </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Concluir</span><br>
+                    Revise e certifique-se de que as informações inseridas e selecionadas estão corretas.<br>
+                    Clique em 'Terminar de adicionar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/concluir.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <!-- abaixo deste comentário ainda não foi revisado -->
 
                 <p class="font-weight-bold offset-1">4.2 Acesso ao sistema:</p>
                 <p class="offset-2">•<b>Pré-Condição:</b> receber o formulário de cadastro/mudança de
@@ -184,7 +226,7 @@
                     <!--arrumar as imagens-->
                     <div class="row">
                         <div class="col-4">
-                            <img src="../imagens/cadastro-funcionario-img8.png" />
+                            <img src="../imagens/ITMA-007-Usuarios_e_computadores_AD.jpg"/>
                         </div>
                 </div>
                 <p class="offset-2">•Preencha os campos do formulário, a senha do usuário será definida de acordo com a política, que determina que a senha do usuário deverá ser o primeiro nome do usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.
