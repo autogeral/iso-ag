@@ -50,7 +50,7 @@
                                         class="ml-2">ITMA-007</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">02</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">03</output>
                                 </td>
                             </tr>
                         </table>
@@ -90,136 +90,186 @@
                 <p>Não aplicável.</p>
 
                 <p class="font-weight-bold">4. Procedimentos e Responsabilidades</p>
-
-                <p class="font-weight-bold offset-1">4.1 Preenchimento do Formulário Eletrônico:</p>
-
-                <p class="offset-2">• Receber o formulário de cadastro/mudança de funcionário no sistema.
-                    <br>
-                    •	Abrir a área de trabalho remota do AD01 ou BD01;
-                    <br>
-                    • Acesse o Usuários e computadores do Active Directory, então acesse a pasta de usuários.
-                </p>
-
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img1.png" width=540 height=400 class="mb-4" />
-                </div>
-
-
-                <p class="offset-2">•Feito isso, clique com o botão direito sobre o usuário a ser copiado, clique em copiar, preencha as informações na tela que vai se abrir e clique em avançar, como demonstram as imagens a seguir:</p>
-
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img2.png" width=440 height=400 class="mb-4" />
-                </div>
-               
-                <p class="offset-2">• Coloque a senha padrão (12345678), indique que o usuário deve mudar a senha no
-                    primeiro acesso e clique em avançar</p>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img4.png" width=340 height=300 class="mb-4" />
-                </div>
-
-                <p class="offset-2">•Confira as informações e clique em concluir:</p>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img5.png" width=340 height=300 class="mb-4" />
-                </div>
-
-                <p class="font-weight-bold offset-1">4.2 Acesso ao sistema:</p>
-                <p class="offset-2">•<b>Pré-Condição:</b> receber o formulário de cadastro/mudança de
-                    funcionário para alteração no sistema:</p>
-
-
-                <p class="offset-2">-Acessar o banco de dados e definir o novo usuário através do comando: create user
-                    <b>‘< política de criação de usuário>’</b>@’%’ identified by <b>‘< política de criação de senha>
-                            ’</b></p>
-
-                <p class="offset-2">• <b>Política de criação de usuário:</b> O login do usuário será
-                    definido
-                    de acordo com esta política, que determina que o login do usuário deverá ser < primeiro nome>.<
-                            último nome>, tudo com letras minúsculas.</p>
-
-                <p class="offset-2">Exemplo: Arthur Camocardo Corrêa, o login será arthur.correa. </p>
-
-                <p class=" offset-2">• Política de criação de senha: A senha do usuário será definida de
-                    acordo com esta política, que determina que a senha do usuário deverá ser o primeiro nome do
-                    usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.:</p>
-
-                <p class="offset-2">Exemplo: Arthur Camocardo Corrêa criado no ano de 2019, a senha será
-                    Arthur@2019, recomenda-se a troca da senha no primeiro acesso, pelo usuário.</p>
-
-                <p class="offset-2">-Acessar o banco de dados e verificar as permissões do usuário que
-                    têm a mesma ou parecida função do novo funcionário através do comando: show grants for ‘< nome do
-                        usuário>’@’%’.</p>
-
-                <p class="offset-2">-Estas mesmas permissões deverão ser passadas ao novo usuário, para isso basta
-                    copiá-las e executá-las, não esqueça de mudar o nome do usuário a receber os novos privilégios.
-                </p>
-
-                <p class="offset-2">-O próximo passo é a criação ou substituição do usuário no sistema
-                    ERPJ, abra a tela de cadastro de acessos, preencha os campos e clique no botão cadastrar, como
-                    ilustrado logo abaixo:</p>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img6.png" width=640 height=300 class="mb-4" />
-                </div>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img7.png" width=340 height=300 class="mb-4" />
-                </div>
-                <p class="offset-2">-Consulte no controle de acessos ao sistema, os níveis de acesso do usuário
-                    utilizado como base para criação do novo usuário.</p>
-
-                <p class="offset-2">-Se for substituição, consulte o usuário pelo padrão de login e
-                    altere os níveis de acesso conforme desejado, feito isso clique sobre o botão alterar.</p>
-                <p class="offset-2">-Caso o substituído estiver saindo da empresa, remova todos os acessos do mesmo</p>
-
-                <p class="font-weight-bold offset-1">Cadastro de estoquista</p>
-                <p class="offset-2">Preencha com os dados do colaborador, e caso o mesmo utilize o coletor, deve-se informar no campo Coletor o número de série do equipamento.
-
-                    <div style="text-align: center">
-                        <img src="../imagens/cadastro-funcionario-img15.png" width=340 height=300 class="mb-4" />
-                    </div>
-
-                <p class="font-weight-bold offset-1">4.3 Criação de e-mail, Gmail, LocaWeb</p>
-                <p class="offset-2"><b>•Pré-Condição:</b> receber o formulário de cadastro/mudança de funcionário no
-                    sistema e ter acesso de administrador aos e-mails. </p>
-                    <p class="offset-2"><b>•Gmail:</b> </p>
-                <div class="container">
-                    <!--arrumar as imagens-->
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="../imagens/cadastro-funcionario-img8.png" />
-                        </div>
-                </div>
-                <p class="offset-2">•Preencha os campos do formulário, a senha do usuário será definida de acordo com a política, que determina que a senha do usuário deverá ser o primeiro nome do usuário, iniciando com letra maiúscula, concatenado ao carácter @ e ao ano vigente.
-                  <br>
-                    Exemplo: Arthur Camocardo Corrêa criado no ano de 2019, a senha será Arthur@2019, recomenda-se a troca da senha no primeiro acesso, pelo usuário. e deve-se indicar a mudança de senha no primeiro acesso do usuário ao e-mail. Feito isso clique em adicionar novo usuário
+                    <p>
+                        Receba o
+                        <a target="_blank" href="https://autogeralcombr-my.sharepoint.com/:w:/g/personal/silmara_lemes_autogeral_com_br/EeRwOL38S5lAtrDlItu3lWQBtutFRMSavG_Avi_FgCOV0A">FRH-006</a>
+                        preenchido, verifique se é solicitado a criação de uma conta Microsoft 365,
+                        caso solicitado, siga toda a instrução, caso contrário, siga diretamente a partir
+                        do índice <a href="#pularMicrosoft">4.2 (Acesso ao sistema)</a>.
                     </p>
 
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img11.png" width=340 height=400 class="mb-4" />
-                </div>
+                <p class="font-weight-bold offset-1">4.1 Adicionar um usuário ao Microsoft 365</p>
 
-                <p class="offset-2"><b>•LocaWeb:</b> </p>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img12.png" width=900 height=400 class="mb-4" />
-                </div>
-                <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img13.png" width=900 height=400 class="mb-4" />
-                </div>
                 <p class="offset-2">
-                    -Clicar em Criar caixa única
-                    <br>
-                	-Preencher os campos do formulário, seguindo as políticas de criação de usuários e senhas citados acima;
+                    <span class="font-weight-bold">Pré-condição:</span> receber o FRH-006 com o campo "MICROSOFT 365
+                    (E-MAIL)" marcado em "SIM".<br>
+                    <span class="font-weight-bold">Acessar admin center do Microsoft 365</span><br>
+                    Acesse <a target="_blank" href="https://admin.microsoft.com/#/users">Usuários ativos - admin center do Microsoft 365</a>
+                    com sua conta de administrador;<br>
+                    Ao acessar, clique em "Adicionar um usuário".
                 </p>
+
                 <div style="text-align: center">
-                    <img src="../imagens/cadastro-funcionario-img14.png" width=500 height=300 class="mb-4" />
+                    <img src="../imagens/ITMA-007/admin_center_active_users.png" width=auto height=550 class="mb-4" />
                 </div>
 
                 <p class="offset-2">
-                •	Após criação do e-mail, o funcionário deverá ser incluído nos grupos de e-mails pertinente à sua função.
-                <p class="font-weight-bold"> 5. Registros</p>
-                <p class="offset-2">-Sistema ERPJ<br>
-                    -Google
-                    <br>
-                    -LocaWeb
+                    <span class="font-weight-bold">Informações básicas</span><br>
+                    Conforme a imagem abaixo, em Adicionar um usuário, preencha os campos 'Nome' e 'Sobrenome' com as informações da FRH-006;<br>
+                    O campo 'Nome de exibição' é preenchido automaticamente ao terminar de escerever os campos anteriores;<br>
+                    Para o 'Nome de usuário' use o primeiro nome e último sobrenome separados por um ponto (.).
+                    Somente caso o nome de usuário não estiver disponível, crie um diferente, mas ainda usando o formato "nome.exemplo";<br>
+                    Você pode desselecionar a opção "Criar uma senha automaticamente" e para criar uma mais fácil de ser comunicada;<br>
+                    MANTENHA SELECIONADA A OPÇÃO "Exigir que este usário altere a senha quando entrar pela primeira vez";<br>
+                    Para evitar que seja necessário redefinir a senha em caso de esquecimento, destine para si mesmo a senha provisória deste usuário;<br>
+                    Clique em 'Avançar'.
                 </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/informacoes_basicas.png" width=auto height=550 class="mb-4" />
+                </div>
+               
+                <p class="offset-2">
+                    <span class="font-weight-bold">Licenças do produto</span><br>
+                    Para que o usuário possa acessar os recursos com a conta Microsoft 365 é necessário que seja atribuída
+                    uma licença como a Microsoft 365 Business Basic, que dá acesso a aplicações online, acessíveis pelo navegador, incluindo Outlook, Excel,
+                    Word, Teams. Já a Microsoft 365 Business Standard disponibiliza algumas aplicações em suas versões desktop.
+                    Selecione a que mais se adapta as necessidades do colaborador, é preferivel que a versão Standard seja atribuída apenas a cargos de gestão.
+                    Mais abaixo na mesma tela, é possível verificar a lista de aplicativos disponibilizados com a licença selecionada.<br>
+                    Clique em 'Avançar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/licencas_do_produto.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Configurações opcionais</span><br>
+                    Não fazemos uso das Configurações opcionais. Não é necessário preencher os campos de informações
+                    de perfil.<br>
+                    Clique em 'Avançar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/configuracoes_opcionais.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Concluir</span><br>
+                    Revise e certifique-se de que as informações inseridas e selecionadas estão corretas.<br>
+                    Clique em 'Terminar de adicionar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/concluir.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="font-weight-bold offset-1">4.2 Adicionar um usuário de Rede</p>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Pré-condição:</span> receber o FRH-006 com o campo "USUÁRIO DE REDE" marcado em "SIM".<br>
+                    <span class="font-weight-bold">Acessar o BD01 e acessar o Active Directory</span><br>
+                    Acesse o BD01 com sua conta de administrador;<br>
+                    Abra "Usuários e Computadores do Active Directory".
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/acessar_o_AD.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Encontrar usuário a ser copiado</span><br>
+                    Para criar um usuário no Active Directory localize, na FRH-006, a informação de qual o usuário a
+                    ser copiado. Solicitamos esta informção para facilitar o processo de criação de novos usuários e para manter a
+                    consistencia sobre os acessos que cada um recebe, conforme suas funções.<br>
+                    Acesse a pasta 'Usuarios';<br>
+                    Encontre o usuário a ser copiado e selecione-o;<br>
+                    Clique com o botão direito e selecione 'Copiar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/user_a_ser_copiado.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Informações do usuário</span><br>
+                    Após o passo anterior, uma pequena janela "Copiar objeto - Usuário" será aberta.
+                    Adicione nome e sobrenome. Nome completo é formado automaticamente após escreve o sobrenome;<br>
+                    Para o 'Nome de usuário' use o primeiro nome e último sobrenome separados por um ponto (.).
+                    Somente caso o nome de usuário não estiver disponível, crie um diferente,
+                    mas ainda usando o formato "nome.exemplo";<br>
+                    Clique em 'Avançar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/infos_novo_user.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Definir senha</span><br>
+                    Defina uma senha provisória para o novo usuário;<br>
+                    Selecione a opção "O usuário deve alterar a senha no próximo logon";<br>
+                    Clique em 'Avançar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/senha_do_usuario_de_rede.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Concluir</span><br>
+                    Revise;<br>
+                    Clique em 'Concluir'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/concluir_usuario.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    <span class="font-weight-bold">Adicionar o e-mail corporativo do funcionário</span><br>
+                    Se o usuário tem um e-mail corporativo, adicione-o ao perfil do usuário.<br>
+                    Selecione o usuário que acabou de criar;<br>
+                    Clique com o botão direito no usuário;<br>
+                    Selecione propriedades.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/propriedades_do_usuario.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="offset-2">
+                    No campo 'Email', coloque o e-mail deste usuário;<br>
+                    Clique em 'Aplicar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/email_do_usuario.png" width=auto height=550 class="mb-4" />
+                </div>
+
+                <p class="font-weight-bold offset-1">4.3 Adicionar usuário ERPJ (DBF)</p>
+                
+                <p class="offset-2">
+                    <span class="font-weight-bold">Pré-condição:</span> receber o FRH-006 com o campo "USUÁRIO ERPJ (DBF)"
+                    marcado em "SIM".<br>
+                    <span class="font-weight-bold">Criar o usuário ERPJ (DBF)</span><br>
+                    Confira a documentação no GitHub:
+                    <a target="_blank" href="https://github.com/autogeral/home/blob/master/Band-aid/Geral/criaUsuario.md">Criar Usuário</a>.
+                </p>
+                
+                <!--
+                <p class="font-weight-bold offset-1">0.0 Nome Processo</p>
+                
+                <p class="offset-2">
+                    <span class="font-weight-bold">Passo</span><br>
+                    Instrução<br>
+                    Clique em 'Avançar'.
+                </p>
+
+                <div style="text-align: center">
+                    <img src="../imagens/ITMA-007/image.png" width=auto height=550 class="mb-4" />
+                </div>
+                -->
 
                 <p class="font-weight-bold">6. Histórico de Revisões</p>
                 <table border=1px cellpadding=5px style="text-align: center; width: 100%" class="mt-2 mb-4">
@@ -246,6 +296,12 @@
                         <td>Revisão geral do documento</td>
                         <td>João Valente/ Lays Rodrigues/ Murilo Lima</td>
                         <td>28/01/2022</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Revisão geral do documento</td>
+                        <td>Edison Leonel Pucinéli Filho</td>
+                        <td>08/04/2024</td>
                     </tr>
                 </table>
 
