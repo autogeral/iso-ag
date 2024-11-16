@@ -48,7 +48,7 @@
                                         class="ml-2">ITCO-004</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">06</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">07</output>
                                 </td>
                             </tr>
                         </table>
@@ -101,12 +101,28 @@
                     <br>
                     -Alocar o material recebido em um dos porta-paletes, e anotar a locação do mesmo na NF.
                     <br>
-                    -Registrar no ERPJ o recebimento de mercadoria
+                    -Realizar a leitura do código de barras no campo de chave de acesso no momento da chegada da mercadoria;
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/recebimento-entrada-img 55 (1).png" width="1000px" class="mb-4" />
+                    </div>
+                    <br>
+                    -Caso a já esteja cadastrada,irá aparecer a tela da  nota lançada ( no Erp ir em Movimentos-Compras-Consulta de pré compras(chegada de mercadoria))
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/recebimento-entrada-img 56 (1).png" width="1000px" class="mb-4" />
+                    </div>
+                    <br>
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/recebimento-entrada-img 57.png" width="1000px" class="mb-4" />
+                    </div>
+                    <br>
                 </p>
 
                 <p class="font-weight-bold offset-1">4.2 Lançamento de nota fiscal de compras no sistema ERPJ</p>
                 <p class="offset-2">
-                    -O responsável aciona o atalho CTRL + SHIFT + I e lê a chave de acesso da Nfe.
+                    -O responsável aciona o atalho CTRL + SHIFT + T e lê a chave de acesso da Nfe.
                     <br>
                     <br>
                     <b>Nota 1:</b> Para os casos em que
@@ -156,7 +172,7 @@
                     <b>Nota 1:</b> Em caso de pedido de compra duplicado com o mesmo item, verificar no pedido de compra em aberto, qual corresponde a quantidade em aberto pendente, fazendo a alteração manual do número do pedido e o número do item, que corresponde ao pedido correto;
                     <br>
                     <p class="offset-2">
-                        O processo de redistribuição é feito para mercadorias recebidas de terceiros, o ERPJ verifica automaticamente se a quantidade dos itens é suficiente para abastecer sua unidade e as demais. Caso seja, na tela do cadastro da compra, na aba Redistribuição, o botão Gerar redistribuição é acionado e o sistema define a quantidade ideal que deve ser separada para cada unidade.
+                        O processo de redistribuição é feito para mercadorias recebidas de terceiros (processo de redistribuição feito exclusivamente no CD), o ERPJ verifica automaticamente se a quantidade dos itens é suficiente para abastecer sua unidade e as demais. Caso seja, na tela do cadastro da compra, na aba Redistribuição, o botão Gerar redistribuição é acionado e o sistema define a quantidade ideal que deve ser separada para cada unidade.
                     </p>
                 </p>
                 <div style="text-align: center">
@@ -166,14 +182,14 @@
                     <img src="../imagens/recebimento-entrada-img6.png" width="1000px" class="mb-4" />
                 </div>
                 <p class="offset-2">
-                    -Após lançar a nota fiscal no sistema o responsável carimba a nota, coloca da data da entrada e assina, e encaminha o contas a pagar;
+                    -Após lançar a nota fiscal no sistema o responsável carimba a nota, coloca da data da entrada e assina;
                 </p>
 
                 <p class="font-weight-bold offset-1">4.2.1 Gerenciar tarefas do estoquista.</p>
                 <p class="offset-2"> 
-                    -No sistema ERPJ consultar fila de tarefas (Movimentos – Tarefas – Consultar filas de Tarefas), onde são definidas as prioridades (Alta, Média e Baixa) para se iniciar a guarda, conforme processos da <a href="http://isoag.com/its/ITCO-005-alocacao-distribuicao-materiais.html" target="_blank">ITCO-005</a>
+                    -No sistema ERPJ consultar fila de tarefas (Movimentos – Tarefas – Consultar filas de Tarefas), onde são definidas as prioridades (Alta, Média,Baixa e Transferência) para se iniciar a guarda, conforme processos da <a href="http://isoag.com/its/ITCO-005-alocacao-distribuicao-materiais.html" target="_blank">ITCO-005</a>
                 	<br>
-                    -Após a guarda, é verificado a impressão do relatório. Clicar na aba consulta de compra por loja e nota, escolher a opção Matriz e digitar o número da nota correspondente ao relatório. Verificar a locação, quantidade dos itens, ou possíveis divergências anotadas pelo estoquista, e após este processo clicar no botão alterar estoque, e no botão término guarda.
+                    -Após a guarda, é verificado a impressão do relatório. Clicar na aba consulta de compra por loja e nota, escolher a opção da loja em vigente e digitar o número da nota correspondente ao relatório. Verificar a locação, quantidade dos itens, ou possíveis divergências anotadas pelo estoquista, e após este processo clicar no botão alterar estoque para finalizar o processo.
                     <br>
                     -Se houver redistribuição para as filiais, clicar no botão gerar romaneio de transferência/imprimir.
                 </p>
@@ -185,7 +201,7 @@
                     -Nos casos em que a encomenda pertença a um cliente que não aceita Venda Futura, nenhum aviso será
                     emitido pelo sistema, e na consulta de estoque, não constará a quantidade Encomendada. Neste caso,
                     apenas um registro deverá constar em Movimentos – Pedidos de Clientes, feito pelo vendedor envolvido
-                    na encomenda e sendo de conhecimento do comprador responsável, com exceção na matriz que é consultado através da observação do pedido de compras (Movimentos – Pedidos de compras);
+                    na encomenda e sendo de conhecimento do comprador responsável,é consultado através da observação do pedido de compras (Movimentos – Pedidos de compras);
                     <br>
                     -O responsável pelo estoque, consulta no sistema os produtos que tiveram aviso de encomenda, através
                     da consulta de X, e na tela do produto, na aba Estoques, verifica a coluna Encomenda para saber de
@@ -198,13 +214,17 @@
                     <img src="../imagens/recebimento-entrada-img21.png" width="1000px" class="mb-4" />
                 </div>
 
-                <p class="offset-2">-Na impressão, uma marcação é feita em cada item que seja encomenda, e no final do
+                <p class="offset-2">-No Relatorio uma marcação é feita em cada item que seja encomenda, e no final do
                     relatório é especificado o X e a quantidade que irá para cada unidade. </p>
                 <p class="offset-2">- Na nota insere-se uma observação escrevendo a quantidade, o X, o nome do vendedor e a loja onde a encomenda será destinada.</p>
+                <p class="offset-2">- Enviar para a loja de destino, utilizando a etiqueta padrão de ENCOMENDA.</p>
+                <div style="text-align: center">
+                    <img src="../imagens/recebimento-entrada-(encomenda).png" width="1000px" class="mb-4" />
+                </div>
 
                 <p class="font-weight-bold offset-1">4.2.3 Alteração da marca do produto de venda futura</p>
                 <p class="offset-2">-Esta função de atualizar a marca do produto encomendado por Venda Futura, só é
-                    permitida se não foi feito o cadastro da nota, e se o usuário que estiver alterando, for gestor ou tiver nível administrativo, máximo, no sistema e se o produto a ser alterado, tiver quantidade entregue = 0, ou seja, não pode ter sido entregue este produto, nem que seja parcialmente. 
+                    permitida se não foi feito o cadastro da nota, e se o usuário que estiver alterando, for encarregado ou tiver nível administrativo, máximo, no sistema e se o produto a ser alterado, tiver quantidade entregue = 0, ou seja, não pode ter sido entregue este produto, nem que seja parcialmente. 
                     <br>
                     -Avisar o setor de compras e vendas, sobre a possível divergência, para os mesmos entrem em contato com o cliente, onde terá o aval do mesmo;
                     <br>
@@ -229,12 +249,20 @@
                 <p class="offset-2"><b>Nota 1:</b>Se a venda futura foi feita por NFe, o sistema exigirá que uma carta
                     de correção tenha sido criada, na primeira Nfe emitida, especificando a alteração da marca, como
                     mostrado abaixo. </p>
+                    
+        
                     <div style="text-align: center">
-                        <img src="../imagens/recebimento-entrada-img9.png" width="1000px" class="mb-4" />
+                        <img src="../imagens/recebimento-entrada-(cartacorrecao).png" width="1000px" class="mb-4" />
                     </div>
 
                 <div style="text-align: center">
                     <img src="../imagens/recebimento-entrada-img10.png" width="1000px" class="mb-4" />
+                </div>
+                <br>
+                -Caso não tenha sido feito a carta de correção, ao tentar alterar o item , aparecerá a imagem abaixo:
+                <br>
+                <div style="text-align: center">
+                    <img src="../imagens/recebimento-entrada-img9.png" width="1000px" class="mb-4" />
                 </div>
                 <p class="offset-2"><b>Nota 2:</b>Se tudo estiver de acordo com o esperado, o sistema permitirá a
                     alteração da marca do produto. Para isso, abra a tela de Pedido do Cliente e de 2 cliques na coluna
@@ -274,6 +302,10 @@
                     <b>Nota 2: </b>Caso seja uma entrada de transferência de venda casada, ao ler a chave de acesso, o
                     sistema irá cadastrar a nota automaticamente, não havendo a necessidade em informar a operação, nem
                     clicar em cadastrar.
+
+                    <p class="font-weight-bold offset-1">4.4 Entrada de Notas de Serviços-NFS-e</p>
+                    <p class="offset-2">-( Em construção)
+                        <br>
                 </p>
 
                 <div style="text-align: center">
@@ -334,6 +366,12 @@
                         <td>Revisão geral do documento</td>
                         <td>João Guilherme/ Alexandre Borges</td>
                         <td>01/02/2022</td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>Revisão geral do documento</td>
+                        <td>João Guilherme/ Alexandre Borges</td>
+                        <td>11/11/2024</td>
                     </tr>
                 </tr>
                 </table>

@@ -49,7 +49,7 @@
                                         class="ml-2">ITLO-001</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">07</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">08</output>
                                 </td>
                             </tr>
                         </table>
@@ -96,7 +96,31 @@
                 <div style="text-align: center">
                     <img src="../imagens/separacao-img1.png" width="auto" height="300px" class="mb-4" />
                 </div>            
-                -Para a separação de apenas um romaneio, com o coletor em mãos, o estoquista irá observar as informações necessárias para fazer a separação, conforme Manual de usuário do Inventário/Separação no GLPI: <a href="http://www.agsuporte.com/index.php?redirect=%2Ffront%2Fhelpdesk.faq.php%3Fid%3D26&error=3">Clique aqui</a>
+                -Para a separação do romaneio, com o coletor em mãos, clica em separação, e o romaneio será impresso;
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img4.png" width="auto" height="300px" class="mb-4" />
+                </div>  
+                <br/>
+                -A locação do produto irá aparecer no romaneio e no coletor;
+                <br/>
+                -O estoquista irá observar as informações necessárias para fazer a separação, essas informações são: o código da peça "X", a quantidade, e a locação;
+                <br/>
+                -Ir até a locação do produto;
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img5.png" width="auto" height="300px" class="mb-4" />
+                </div>  
+                <br/>
+                -Após chegar na locação indicada pelo coletor/romaneio, bipar o item;
+                <br/>
+                -O coletor irá dar uma mensagem que foi separado;
+                <br/>
+                -Clicar em finalizar e levar o produto na conferência.
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img6.png" width="auto" height="300px" class="mb-4" />
+                </div>  
                 <br/>
                 -Após terminar a separação, levar a peça na conferência, onde o conferente irá terminar o procedimento, conforme <a href="http://isoag.com/its/ITLO-002-conferencia.html" target="_blank">ITLO-002</a>.
                 <br/>
@@ -104,12 +128,38 @@
                 <br/>
                 -Varredura no estoque para conferir se não está em locação errada.
                 <br/>
-                -Solicitar a recontagem dos itens faltantes em todas as lojas;
+                -Se localizar o item, levar a peça na conferência;
                 <br/>
-                -Pedir no estoque das filiais
+                -Se não localizar o item, solicitar para a loja que tenha o item em estoque.
                 <br/>
-                -Em caso de confirmação da falta do item na loja de separação, é disparado um alerta automaticamente via sistema para o vendedor
+                -Ao iniciar a separação caso o estoquista não encontre o item, seguir as próximas etapas:
                 <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img7.png" width="auto" height="300px" class="mb-4" />
+                </div>
+                <br/>
+                -Clicar no triângulo, e digitar o X e clicar em marcar como não encontrado
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img8.png" width="auto" height="300px" class="mb-4" />
+                </div>
+                <br/>
+                -Voltar na tela inicial e clicar em “itens pendentes
+                <br/>
+                -Se o item realmente NÃO for encontrado, digitar o que aconteceu e a solução (conforme exemplo ao lado) e clicar em “cadastrar erro na conferência".
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img9.png" width="auto" height="300px" class="mb-4" />
+                </div>
+                <br/>
+                -Vai aparecer a mensagem de “romaneio separado” e o vendedor será notificado, da ocorrência e solução.
+                <br/>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img10.png" width="auto" height="300px" class="mb-4" />
+                </div>
+                <div style="text-align: center">
+                    <img src="../imagens/separacao-img11.png" width="auto" height="300px" class="mb-4" />
+                </div>
                 <br/>
                 <p class="font-weight-bold offset-1">4.1.1 Separação de produto no estoque venda casada</p>
                 <p class="offset-2">-O vendedor de outra loja emite o romaneio de venda casada onde consta a
@@ -118,35 +168,45 @@
                     -Dispara um aviso na tela da loja requerida.
                     <br>
                     -Para fazer a separação, o estoquista digita seu código, e associa o romaneio ao seu coletor.
+                    <div style="text-align: center">
+                        <img src="../imagens/separacao-img12.png" width="auto" height="300px" class="mb-4" />
+                    </div>
                     <br/>
                     -Com o coleto em mãos, o estoquista irá observar as informações necessárias para fazer a separação, essas informações são: o código da peça "X", a quantidade, e a locação.
                     <br/>
-                    -Após a separação o estoquista leva a peça junto com a nota fiscal emitida atraves so sistema ERP, para a caixa da loja correspondente.
+                    <div style="text-align: center">
+                        <img src="../imagens/separacao-img13.png" width="auto" height="300px" class="mb-4" />
+                    </div>
+                    <div style="text-align: center">
+                        <img src="../imagens/separacao-img14.png" width="auto" height="300px" class="mb-4" />
+                    </div>
+                    <br/>
+                    -Após a separação o estoquista leva a peça junto com a nota fiscal conforme  <a href="http://isoag.com/its/ITFI-002-emissao-nota-fiscal.html" target="_blank">ITFI-002</a>, emitida através do sistema ERPJ, para a caixa da loja correspondente, utilizando a etiqueta padrão
                     <br/>
                     -Se não localizar o(s) item(s), o estoquista direciona via coletor para itens pendentes, para o responsável da atividade tomar a decisão que pode ser: 
                     <br/>
-                    -Varredura no estoque para conferir se não está em locação errada;
                     <br/>
-                    -Solicitar a recontagem dos itens faltantes em todas as lojas.
+                    <div style="text-align: center">
+                        <img src="../imagens/separacao-img15.png" width="auto" height="300px" class="mb-4" />
+                    </div>
                     <br/>
-                    -Pedir no estoque das filiais.
-                    <br/>
-                    -Em caso de confirmação da falta do item na loja de separação, é disparado um alerta automaticamente via sistema para o vendedor.
+                    -Se não localizar o(s) item(s), seguir o mesmo processo 4.1.1 descrito acima.
                     </p>
 
-                <p class="font-weight-bold offset-1">4.1.2 - Reposição de estoque da Matriz para as filiais (Lista) </p>
+                <p class="font-weight-bold offset-1">4.1.3	Remanejamento de estoque do CD para filiais (lista) </p>
                 <p class="offset-2">
-                    -O T.I. gera a lista de remanejamento, duas vezes por dia (de manhã e a tarde) de segunda a sexta, e aos sabados 01 vez pela manhã.
+                    -O T.I. gera a lista de remanejamento, diariamente no CD para as filiais
                     <br>
-                    -A separação é realizada pelo coletor, conforme sequencia gerada pelo sistema ERPJ .
+                    -A separação é realizada pelo coletor, conforme sequencia gerada pelo sistema ERPJ  
                     <br/>
                     -Após a separação, o estoquista deixa as peças na mesa da embalagem conforme item 4.2.1. da <a href="http://isoag.com/its/ITCO-005-alocacao-distribuicao-materiais.html" target="_blank">ITCO-005</a>.
                     <br>
                     </p>
 
-                <p class="font-weight-bold offset-1">4.1.3 Reposição de estoque entre filias.</p>
+                <p class="font-weight-bold offset-1">4.1.4	Reposição de estoque entre filias.
+                    </p>
                 <p class="offset-2">
-                    -O T.I. gera a lista de remanejamento, duas vezes por dia (de manhã e a tarde) de segunda a sexta, e aos sabados 01 vez pela manhã.
+                    -O T.I. gera a lista de remanejamento, uma vez por semana, às quarta-feira para as lojas 
                     <br>
                 	-A separação é realizada pelo coletor, conforme sequencia gerada pelo sistema ERPJ  
                     <br>
@@ -215,6 +275,11 @@
                         <td>João Zeppini/Alexandre Borges</td>
                         <td>17/10/2022</td>
                     </tr>
+                    <td>08</td>
+                    <td>Revisão geral do documento</td>
+                    <td>João Guilherme/Alexandre Borges</td>
+                    <td>11/11/2024</td>
+                </tr>
                 </table>
 
             </div>
