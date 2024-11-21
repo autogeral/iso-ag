@@ -78,7 +78,7 @@
                 </table>
                 <p class="font-weight-bold">1. Objetivo</p>
                 <p class="offset-2">Essa instrução de trabalho tem objetivo de fornecer todas as informações sobre o
-                    nosso processo de recebimento de entradada materiais</p>
+                    nosso processo de recebimento de entrada materiais</p>
 
                 <p class="font-weight-bold">2. Referências </p>
                 <p class="offset-2">MQ-001 – Manual da Qualidade</p>
@@ -126,8 +126,9 @@
                     <br>
                     <br>
                     <b>Nota 1:</b> Para os casos em que
-                    o sistema informe que a Nfe não foi encontrada, o responsável acessa o portal
-                    (www.nfe.fazenda.gov.br), coloca o leitor de código de barras no campo Chave de Acesso da nota
+                    o sistema informe que a Nfe não foi encontrada, o responsável acessa o portal  <br>
+                    <a target="_blank" href="https://www.nfe.fazenda.gov.br/portal/principal.aspx">(www.nfe.fazenda.gov.br)</a> 
+   , coloca o leitor de código de barras no campo Chave de Acesso da nota
                     fiscal e baixa o XML fazendo o Download, após isso deverá fazer conforme nota abaixo somente para
                     esses casos específicos. A entrada é feita no mesmo sistema ERPJ, em Movimentos -> Compras -> Cadastrar compra de mercadoria (NFE) -> Ler Nfe (abrirá um campo para localizar o download da nota fiscal).
                 </p>
@@ -172,7 +173,7 @@
                     <b>Nota 1:</b> Em caso de pedido de compra duplicado com o mesmo item, verificar no pedido de compra em aberto, qual corresponde a quantidade em aberto pendente, fazendo a alteração manual do número do pedido e o número do item, que corresponde ao pedido correto;
                     <br>
                     <p class="offset-2">
-                        O processo de redistribuição é feito para mercadorias recebidas de terceiros (processo de redistribuição feito exclusivamente no CD), o ERPJ verifica automaticamente se a quantidade dos itens é suficiente para abastecer sua unidade e as demais. Caso seja, na tela do cadastro da compra, na aba Redistribuição, o botão Gerar redistribuição é acionado e o sistema define a quantidade ideal que deve ser separada para cada unidade.
+                        -O processo de redistribuição é feito para mercadorias recebidas de terceiros (processo de redistribuição feito exclusivamente no CD), o ERPJ verifica automaticamente se a quantidade dos itens é suficiente para abastecer sua unidade e as demais. Caso seja, na tela do cadastro da compra, na aba Redistribuição, o botão Gerar redistribuição é acionado e o sistema define a quantidade ideal que deve ser separada para cada unidade.
                     </p>
                 </p>
                 <div style="text-align: center">
@@ -303,14 +304,141 @@
                     sistema irá cadastrar a nota automaticamente, não havendo a necessidade em informar a operação, nem
                     clicar em cadastrar.
 
-                    <p class="font-weight-bold offset-1">4.4 Entrada de Notas de Serviços-NFS-e</p>
-                    <p class="offset-2">-( Em construção)
-                        <br>
-                </p>
+                    <div style="text-align: center">
+                        <img src="../imagens/recebimento-entrada-img16.png" width="1000px" class="mb-4" />
+                    </div>
 
-                <div style="text-align: center">
-                    <img src="../imagens/recebimento-entrada-img16.png" width="1000px" class="mb-4" />
-                </div>
+                    <p class="font-weight-bold offset-1">4.4 Entrada de Notas de Serviços-NFS-e</p>
+                    <p class="offset-2">Notas de Serviços são notas enviadas por prestadores (mão de obra, prestador de serviços em geral) e devem ser cadastradas no ERP
+                        <br>
+                        -Ir em Movimentos – Compras – cadastrar compra de serviço)
+                        <br>
+                        <div style="text-align: center">
+                            <img src="../imagens/recebimento-entrada-img17.png" width="1000px" class="mb-4" />
+                        </div>
+                        <br>
+                         -Ao cadastrar no ERP e preencher todos os campos, e anexar a NFS-e seguindo os passos abaixo
+                        <br>
+                        <div style="text-align: center">
+                            <img src="../imagens/recebimento-entrada-img18.png" width="1000px" class="mb-4" />
+                        </div>
+                        <br>
+                        -Irá abrir a tela, procurar onde salvou o arquivo e selecionar a NFSe
+                        <br>
+                        <div style="text-align: center">
+                            <img src="../imagens/recebimento-entrada-img24.PNG" width="1000px" class="mb-4" />
+                        </div>
+                        <br>
+                        -Após anexar, irá aparecer a nfse no sistema, para conferir se está correta, só clicar 2x sobre o lançamento
+                        <br>
+                        <div style="text-align: center">
+                            <img src="../imagens/recebimento-entrada-img25.PNG.jpg" width="1000px" class="mb-4" />
+                        </div>
+                        <br>
+                        - Ao cadastrar a NFSe no ERP, não será mais necessário enviar a NFSe impressa para o Contas a Pagar (com excessão de nfse com modo de pagamento A VISTA que deverá sempre vir uma via no fechamento de caixa)                        
+                        <br>
+                        <p class="font-weight-bold offset-1">4.5 Entrada de Conhecimento de Transporte – Cte</p>
+                    <p class="offset-2">Assegurar o lançamento correto dos Conhecimentos de Transporte Eletrônicos (CTEs) no sistema e a correta geração das contas a pagar.
+                        <br>
+                        <p class="offset-2"><b>Identificar o Tomador de Serviço:</b>
+                        <br>
+                         -Remetente ou Destinatário: Verificar se o tomador de serviço é por conta da AUTO GERAL.
+                        <br>
+                         -Minuta de Transporte: Não é necessário lançar no sistema, e sim verificar na observação o tipo de frete se estiver FRETE A PAGAR solicitar ao fornecedor o CTE.
+                        <br>
+                        <p class="offset-2"><b>Lançamento do CTE </b>
+                            <br>
+                            Baixar o XML:
+                            <br>
+                             -Acesse o site da Fazenda e faça o download do arquivo XML do CTE correspondente
+                            <br>
+                            <div style="text-align: center">
+                                <img src="../imagens/recebimento-entrada-img26.PNG.jpg" width="1000px" class="mb-4" />
+                            </div>
+                            <br>
+                             -No sistema ir em (Movimentos – Compras – Cadastrar conhecimento de Transporte)
+                            <br>
+                            <div style="text-align: center">
+                                <img src="../imagens/recebimento-entrada-img27.PNG.jpg" width="1000px" class="mb-4" />
+                            </div>
+                            <p class="offset-2"><b>Cadastrar CTE: </b>
+                                <br>
+                                -Selecione a opção cadastrar CTE
+                                <br>
+                                -No campo ler CTE, busque e selecione o XML baixado do site da Fazenda.
+                                <br>
+                                -No campo Centro de Custo, insira o código 07.02 (Fretes).
+                                <br>
+                                <div style="text-align: center">
+                                    <img src="../imagens/recebimento-entrada-img28.PNG.jpg" width="1000px" class="mb-4" />
+                                </div>
+                                <p class="offset-2"><b>Gerar Contas a Pagar  </b>
+                                    <br>
+                                    Obter o Fechamento Quinzenal:
+                                    <br>
+                                    -Acesse seu e-mail e baixe o fechamento quinzenal. 
+                                    <br>
+                                    -Segue exemplo:
+                                    <div style="text-align: center">
+                                        <img src="../imagens/recebimento-entrada-img29.PNG.jpg" width="1000px" class="mb-4" />
+                                    </div>
+                                    <br>
+                                 -Verifique se todos os CTEs estão corretamente lançados no sistema.
+                                 <br>
+                                 -Inserir o Modo de Pagamento:
+                                 <br>
+                                 -No último CTE do fechamento, insira o modo de pagamento como 15 dias. (16)
+                                 <br>
+                                 -Cadastrar pagamentos
+                                 <br>
+                                 <div style="text-align: center">
+                                    <img src="../imagens/recebimento-entrada-img30.PNG.jpg" width="1000px" class="mb-4" />
+                                </div>
+                                <br>
+                                 -Cadastrar pagamentos:
+                                 <br> 
+                                 -Vá até a aba de pagamentos e registre o pagamento correspondente, clicando 2x no pagamento gerado.
+                                 <br>
+                                 <div style="text-align: center">
+                                    <img src="../imagens/recebimento-entrada-img31.PNG.jpg" width="1000px" class="mb-4" />
+                                </div>
+                                <br>
+                                 -Registrar Boleto e Observações:
+                                 <br>
+                                 -Insira o código de barras do boleto referente ao fechamento.
+                                 <br>
+                                 -Na aba pagamentos, adicione na observação todos os números de CTE pertencentes ao fechamento.
+                                 <br>
+                                 <div style="text-align: center">
+                                    <img src="../imagens/recebimento-entrada-img32.PNG.jpg" width="1000px" class="mb-4" />
+                                </div>
+                                <p class="offset-2"><b>Conferir CNPJ do Beneficiário:</b>
+                                    <br>
+                                    Verifique se o CNPJ do beneficiário do boleto corresponde ao CNPJ presente no fechamento
+                                    <br>
+                                    <div style="text-align: center">
+                                        <img src="../imagens/recebimento-entrada-img33.PNG.jpg" width="1000px" class="mb-4" />
+                                    </div>
+                                    <div style="text-align: center">
+                                        <img src="../imagens/recebimento-entrada-img34.PNG.jpg" width="1000px" class="mb-4" />
+                                    </div>
+                                    <br>
+                                     -Caso esteja divergente inserir no cadastro de conta a pagar o CNPJ do beneficiário que está no boleto
+                                    <br>
+                                    <div style="text-align: center">
+                                        <img src="../imagens/recebimento-entrada-img35.PNG.jpg" width="1000px" class="mb-4" />
+                                    </div>
+                                    <p class="offset-2">
+                                        <b>Nota 1:</b>Assegure-se de que o XML esteja completo e correto antes de fazer o upload no sistema.
+                                        <br>
+                                        <p class="offset-2">
+                                        <b>Nota 2:</b>Revise todos os dados e documentos com atenção para evitar erros no lançamento e no pagamento.
+                                        <br>
+                                        <p class="offset-2">
+                                        <b>Nota 3:</b>Em caso de dúvidas ou inconsistências, consulte o manual do sistema ou entre em contato com a equipe de suporte.
+                    </p>
+
+               
 
                 <p class="font-weight-bold">5 Registros</p>
                 Sistema ERPJ
