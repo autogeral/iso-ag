@@ -48,7 +48,7 @@
                                         class="ml-2">ITFI-003</output></td>
                             </tr>
                             <tr>
-                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">05</output>
+                                <td><output class="font-weight-bold">Revisão:</output> <output class="ml-2">06</output>
                                 </td>
                             </tr>
                         </table>
@@ -138,11 +138,17 @@
                 <p class="offset-2">
                     -Se for com cartão de crédito ou débito, utilizar o TEF, apenas colocar o modo de pagamento, conforme o prazo combinado com o cliente (F8 - para consultar).
                     <br>
-                    -Se for pago através de depósito bancário, colocar o modo de pagamento 102 – Crédito em Conta
+                    -Se for pago através de depósito bancário (PIX), colocar o modo de pagamento 102 – Crédito em Conta
                     Corrente, e na “aba pagamentos”, clicar com o botão direito, detalhes de pagamentos, na aba “Conta
-                    Corrente” colocar os dados da conta onde foi depositado (F8 para consultar);
+                    Corrente” colocar os dados da conta onde foi depositado (F8 para consultar).Confirmar no ERPJ a validação do deposito.
                     <br>
-                    -Se for pago através do link de pagamento MaxiPago, consultar o Manual de usuário do Link de Pagamento maxiPago para Caixas no GLPI, através do link <a href=http://www.agsuporte.com/index.php?redirect=%2Ffront%2Fhelpdesk.faq.php%3Fid%3D27&error=3">Clique aqui</a> 
+                    -<div style="text-align: center;">
+                        <img src="../imagens/abertura-fechamento-caixa-img14.png.jpg" width="500" height="140" class="mb-4" />
+                    </div>
+                    <br>
+                    -<div style="text-align: center;">
+                        <img src="../imagens/abertura-fechamento-caixa-img15.png.jpg" width="500" height="140" class="mb-4" />
+                    </div>
                 </p>
 
                 <p class="font-weight-bold offset-1">4.3. Recebimento de pedido com modo de pagamento: Receber no Local;
@@ -339,7 +345,11 @@
                     <br>
                 	-30/60 dias – vendas acima de R$ 500,00 - sem acréscimo 
                 	<br>
-                    -30/60/90 dias – vendas acima de R$ 3.000,00 – sem acréscimo
+                    -25/50/75 dias – vendas acima de R$ 1000,00 - sem acréscimo 
+                	<br>
+                    -30/60/90 dias – vendas acima de R$ 1200,00 – sem acréscimo
+                	<br>
+                    -30/60/90/120 dias – vendas acima de R$ 3000,00 – sem acréscimo
                 	<br>
                     -Para vendas acima de R$7.000,00, consultar o responsável pelo financeiro ou gestor/encarregado da loja.
                 </p>
@@ -353,6 +363,120 @@
                     -Em caso de atrasos, aplica-se a regra dos juros, sendo a mesma do cliente.
                 </p>
                 
+
+                 <p class="font-weight-bold">4.14. Envio de Nfe ao sefaz;</p>
+                <p class="offset-2">
+                    -Todas as NF-e  DEVEM ser enviadas ao Sefaz;  
+                    <br>
+                	-No ERP ir em (Movimentos – Nfe ou SAT – Consultar por  data e loja.
+                	<br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img16.png.jpg" class="mb-4" />
+                    </div>
+                    -Rolar a barra até o final.
+                    <br>
+                	-Ordenar a coluna NFE  para verificar as notas pendentes de envio (0)
+                	<br>
+                    -Clicar 2x na NF/SAT
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img17.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -Clicar ENVIAR
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img18.png.jpg" class="mb-4" />
+                    </div>
+                  </p>
+                  <br>
+                    -Nota fiscal são documentos oficiais de venda e devem acompanhar a mercadoria no ato da compra do cliente. Isso é passível de multa e autuação pela falta da entrega do documento. O cliente pode até denunciar a empresa pela não emissão da NFE
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img19.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -Em caso de erro, abrir chamado com o T.I., enviando print da tela
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img20.png.jpg" class="mb-4" />
+                    </div>
+                 
+                    <p class="font-weight-bold">Possiveis erros de NFe que não precisa abrir chamado no TI .</p>
+                    <p class="offset-2">Validação de nota fiscal no Sefaz
+                    <br>
+                    -Antes de abrir chamado junto ao TI é necessário que seja descartada todas as possibilidades relacionadas ao cadastro do cliente. O cadastro do cliente precisa estar completo, razão social, CNPJ ou CPF (se pessoa física), inscrição estadual (quando tiver), endereço (incluindo, rua, número, bairro, CEP, cidade, etc.)
+                    Entretanto, existem algumas particularidades que também impedem a validação e autorização da nota fiscal, abaixo listamos algumas situações que devem ser verificadas.
+                    <br>
+                    a) CLIENTE DO ESTADO DE SÃO PAULO - NOTA REJEITADA - CLIENTE NÃO HABILITADO NA SECRETARIA DA FAZENDA DO ESTADO DE SÃO PAULO<br>
+                    
+                    - Empresas que possuem inscrição estadual têm que estar regulares na Secretaria da Fazenda para que a nota fiscal seja AUTORIZADA, ou seja, o cliente deve ter a opção "habilitado" descrita no Sintegra.
+                    
+                    Sendo assim, se for enviada uma nota fiscal para a SEFAZ e a mesma voltar como rejeitada, consulte a situação do cliente.
+                    
+                    Para os clientes que são do estado de São Paulo, acesse: <a href="http://www.sintegra.gov.br/" target="_blank">SINTEGRA</a>.<br>
+                    
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img21.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -Cliente que a nota fiscal que emitirmos será rejeitada: Situação cadastral -baixada
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img23.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    b) CLIENTE DO ESTADO DE SÃO PAULO - CADASTRO INCORRETO – CLIENTE CONSUMIDOR  FINAL <br>
+                    -Consumidor não é apenas o cliente pessoa física, empresas que só tem atividade de prestação de serviço, geralmente não possui inscrição estadual, sendo assim, o cadastro do mesmo deve conter a informação CONSUMIDOR, pois caso contrário poderá dar erro ao enviar a nota fiscal para a SEFAZ. No cadastro deverá constar essa informação para não ter problema na validação da nota fiscal, preenchendo no campo IE a expressão ISENTO, no campo tributação a opção CONSUMIDOR.
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img24.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -Se o cliente é do estado de São Paulo é possível fazer a consulta para ter certeza de que o cliente é considerado consumidor final. Contudo, se o cliente não for inscrito, aparecerá a seguinte mensagem 
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img26.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    c) CLIENTE DO ESTADO DE SÃO PAULO – NOTA FISCAL REJEITADA – CADASTRO INCOMPLETO (COMÉRCIO) <br>
+                    -Entretanto, para clientes que vendem mercadorias (comércio) ou produtos (indústria) é obrigatório ter inscrição estadual e a mesma deverá estar no cadastro do cliente, sem essa  informação, a nota fiscal poderá também ser rejeitada. Importante preencher o campo Inscrição Estadual com o número da Inscrição Estadual
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img27.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -Havendo inscrição estadual o sistema vai retornar com o cadastro completo do cliente.
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img28.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    d) CLIENTE PJ DE OUTRO ESTADO COM INSCRIÇÃO ESTADUAL – AQUISIÇÃO DE VENDA NA LOJA (BALCÃO) – CADASTRO COMO CONSUMIDOR <br>
+                     -Caso haja necessidade de emissão para algum cliente pessoa jurídica que é de outro e que tenha inscrição estadual é necessário fazer a definição do mesmo como CONSUMIDOR no cadastro.
+A venda no balcão é uma venda estadual e para que o sistema ERP entenda isso deve ser selecionado no campo tributação a opção CONSUMIDOR
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img29.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    - Caso haja dúvida, consulte: <a href="http://www.sintegra.gov.br/" target="_blank">SINTEGRA</a> e selecione o estado onde a empresa tenha cadastro.
+
+
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img30.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+                    -O sistema vai retornar de acordo com o cadastro do estado em questão
+                    <br>
+                    <div style="text-align: center">
+                        <img src="../imagens/abertura-fechamento-caixa-img31.png.jpg" class="mb-4" />
+                    </div>
+                    <br>
+
+
+
 
                 <p class="font-weight-bold">5. Registros</p>
                 <p class="offset-2">(Sem códigos) Relatórios diversos do sistema ERPJ</p>
@@ -401,6 +525,11 @@
                         <td>Ranilori Nascimento</td>
                         <td>27/01/2022</td>
                     </tr>
+                    <td>06</td>
+                    <td>Revisão geral do documento</td>
+                    <td>Silmara Lemes</td>
+                    <td>08/07/2024</td>
+                </tr>
                 </table>
 
             </div>
